@@ -1,0 +1,28 @@
+@import "reset.scss";
+@import "variables.scss";
+@import "typography.scss";
+@import "theme.scss";
+
+
+body {
+    background: $color-primary-bg;
+    color: $color-primary-text;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+.container {
+    max-width: $container-max-width;
+    margin: auto;
+}
+
+@mixin rwd-above($min) {
+    @media screen and (min-width: $min) {
+        @content;
+    }
+}
+
+@mixin rwd-below($max) {
+    @media screen and (max-width: $max) {
+        @content;
+    }
+}

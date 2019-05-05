@@ -1,0 +1,29 @@
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans+TC:400,900);
+
+@for $i from 1 through 6 {
+    h#{$i} {
+        font-size: (7-$i)*0.7em;
+        margin: 120px 0px 40px;
+
+        @if $i < 4 {
+            font-weight: 900;
+        }
+    }
+}
+
+
+p {
+    margin: 16px;
+    line-height: 1.4;
+}
+
+ul {
+    display: inline-block;
+    margin: auto;
+    text-align: left;
+    list-style-type: disc;
+}
+
+li {
+    line-height: 1.2;
+}
