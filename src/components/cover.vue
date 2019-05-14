@@ -7,7 +7,7 @@
       <div v-scroll-reveal class="planet planet2">
         <img class="planet2-body" alt="green planet" src="../assets/planet_green.svg">
         <div class="rotate">
-          <img class="curvetext" alt="SITCON CAMP 2019" src="../assets/curved text.svg">
+          <img class="curvetext" alt="SITCON CAMP 2019" src="../assets/curved text.png">
         </div>
       </div>
       <div v-scroll-reveal class="planet planet1">
@@ -103,7 +103,7 @@ h3 {
   margin-top: 60px;
   font-size: 2em;
   text-align: left;
-  line-height: 1;
+  line-height: 1.1;
   h3 {
     font-size: 1.5em;
   }
@@ -194,9 +194,17 @@ img {
 }
 .planet2-body {
   width: 200px;
+  height: 200px;
+  @include rwd-below(480px) {
+    width: 100px;
+    height: 100px;
+  }
 }
 .curvetext {
   width: 300px;
+  @include rwd-below(480px) {
+    width: 150px;
+  }
 }
 
 .rotate {
@@ -205,6 +213,7 @@ img {
 
 .cage {
   width: 800px;
+  
 }
 
 @keyframes float-up-down {
@@ -226,5 +235,12 @@ img {
   100% {
     transform: rotate(360deg);
   }
+}
+
+img {
+  pointer-events: none;
+}
+img::selection {
+  background: none;
 }
 </style>

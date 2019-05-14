@@ -47,7 +47,7 @@ export default {
       this.ctx.filter = "none";
       this.ctx.fillStyle = "white";
 
-      this.ctx.font = "20px arial";
+      this.ctx.font = "40px arial";
       if (this.offsetZ > 0) this.offsetZ *= 0.96;
       else this.offsetZ = 0;
 
@@ -55,7 +55,7 @@ export default {
 
       var now = (Date.now() * 0.0002) % 1;
 
-      for (var i = 0; i < 200; i++) {
+      for (var i = 0; i < 100; i++) {
         var x = random(i * 6) * this.canvas.width;
         var y = random(i * 6 + 1) * this.canvas.height;
         var z = random(i * 6 + 2) * 0.8 + 0.05;

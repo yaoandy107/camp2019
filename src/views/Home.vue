@@ -1,7 +1,7 @@
 <template>
   <div class="home">
-    <cover class="cover">
-    </cover>
+    <div id="home" class="anchor"></div>
+    <cover class="cover"></cover>
     <Background></Background>
     <HelloWorld msg="SITCON 2019 夏令營"/>
   </div>
@@ -25,7 +25,6 @@ export default {
 </script>
 
 <style scoped lang="scss">
-
 .cover {
   width: 100%;
   min-height: 100vh;

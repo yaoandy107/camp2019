@@ -3,21 +3,24 @@
 @import "typography.scss";
 @import "theme.scss";
 
+html {
+    scroll-behavior: smooth;
+
+}
 
 body {
     background: $color-primary-bg;
     color: $color-primary-text;
     font-family: 'Noto Sans TC', sans-serif;
-    scroll-behavior: smooth;
 }
 
 .container {
     max-width: $container-max-width;
     margin: auto;
-    padding: 12px;
+    padding: 0px 12px;
 }
 
-*::selection{
+*::selection {
     background: black;
     color: white;
 }
