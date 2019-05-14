@@ -8,12 +8,22 @@ body {
     background: $color-primary-bg;
     color: $color-primary-text;
     font-family: 'Noto Sans TC', sans-serif;
+    scroll-behavior: smooth;
 }
 
 .container {
     max-width: $container-max-width;
     margin: auto;
+    padding: 12px;
 }
+
+*::selection{
+    background: black;
+    color: white;
+}
+
+
+
 
 @mixin rwd-above($min) {
     @media screen and (min-width: $min) {

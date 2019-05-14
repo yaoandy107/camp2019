@@ -1,8 +1,8 @@
 <template>
   <div class="home">
     <cover class="cover">
-      <NavBar></NavBar>
     </cover>
+    <Background></Background>
     <HelloWorld msg="SITCON 2019 夏令營"/>
   </div>
 </template>
@@ -11,7 +11,7 @@
 // @ is an alias to /src
 
 import HelloWorld from "@/components/HelloWorld.vue";
-import NavBar from "@/components/NavBar.vue";
+import Background from "@/components/Background.vue";
 import cover from "@/components/cover.vue";
 
 export default {
@@ -19,14 +19,15 @@ export default {
   components: {
     HelloWorld,
     cover,
-    NavBar
+    Background
   }
 };
 </script>
 
 <style scoped lang="scss">
+
 .cover {
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
 }
 </style>

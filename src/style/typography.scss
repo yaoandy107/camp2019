@@ -3,10 +3,13 @@
 @for $i from 1 through 6 {
     h#{$i} {
         font-size: (7-$i)*0.7em;
-        margin: 120px 0px 40px;
+       
 
         @if $i < 4 {
             font-weight: 900;
+            margin: 120px 0px 40px;
+        }@else{
+            margin: 40px 0px 40px;
         }
     }
 }
@@ -18,6 +21,7 @@ p {
 }
 
 ul {
+    padding: 15px 30px;
     display: inline-block;
     margin: auto;
     text-align: left;
@@ -25,5 +29,10 @@ ul {
 }
 
 li {
-    line-height: 1.2;
+    line-height: 1.5;
+    margin: 5px;
+}
+
+hr{
+    margin-top: 40px;
 }
