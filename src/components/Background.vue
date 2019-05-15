@@ -9,7 +9,7 @@ import GradientBG from "../js/gradient_bg.js";
 import { version } from "punycode";
 
 var randomList = [];
-for (var i = 0; i < 200; i++) randomList.push(Math.random());
+for (var i = 0; i < 127; i++) randomList.push(Math.random());
 
 function random(index) {
   return randomList[
@@ -19,6 +19,8 @@ function random(index) {
     ) % randomList.length
   ];
 }
+
+var sourceString = "SITCONCAMP2019" + "void main(){}1234567890-=!@#$%^&*()_+";
 
 export default {
   data() {
@@ -43,11 +45,11 @@ export default {
       this.ctx.save();
       this.drawGradientBG();
       this.ctx.restore();
+      this.ctx.font = "25px arial";
 
       this.ctx.filter = "none";
       this.ctx.fillStyle = "white";
 
-      this.ctx.font = "40px arial";
       if (this.offsetZ > 0) this.offsetZ *= 0.96;
       else this.offsetZ = 0;
 
@@ -55,14 +57,14 @@ export default {
 
       var now = (Date.now() * 0.0002) % 1;
 
-      for (var i = 0; i < 100; i++) {
+      for (var i = 0; i < 120; i++) {
         var x = random(i * 6) * this.canvas.width;
         var y = random(i * 6 + 1) * this.canvas.height;
-        var z = random(i * 6 + 2) * 0.8 + 0.05;
+        var z = random(i * 6 + 2);
         var deg = random(i * 6 + 2) * Math.PI * 2;
-        var size = (z + 1 + random(i * 6 + 2) * 0.5) / 2.5;
+        var size = (1 + random(i * 6 + 2)) / (z*4 + 1);
 
-        y -= z * this.offsetY;
+        y -= (1 / (z * 5 + 1)) * this.offsetY;
 
         y %= innerHeight + 400;
         while (y < -100) y += innerHeight + 300;
@@ -86,7 +88,7 @@ export default {
           (Math.sin((z + now) * Math.PI * 2) + 1) *
           0.5;
 
-        this.ctx.fillText(String.fromCharCode(i + 32), 0, 0);
+        this.ctx.fillText(sourceString.charAt(i % sourceString.length), 0, 0);
         this.ctx.restore();
       }
     }

@@ -15,20 +15,20 @@
         <img class="cage" alt src="../assets/cage.svg">
       </div>
     </div>
-
-    <div class="container">
-      <div class="title-container">
-        <div v-scroll-reveal class="subtitle">
-          <h2>夏令營</h2>
-          <h3>SITCON CAMP 2019</h3>
-        </div>
-        <div v-scroll-reveal class="title">
-          <h1>開源</h1>
-          <h1>宇宙</h1>
-          <div class="leftborder">
-            <h3>OPEN-</h3>
-            <h3>SOURCE</h3>
-            <h3>UNIVERSE</h3>
+    <div class="title-container-wrapper">
+      <div class="container">
+        <div class="title-container">
+          <div v-scroll-reveal class="subtitle">
+            <img src="../assets/camp2019.svg" alt="SITCON CAMP 2019 夏令營">
+          </div>
+          <div v-scroll-reveal class="title">
+            <h1>開源</h1>
+            <h1>宇宙</h1>
+            <div class="leftborder">
+              <h3>OPEN-</h3>
+              <h3>SOURCE</h3>
+              <h3>UNIVERSE</h3>
+            </div>
           </div>
         </div>
       </div>
@@ -88,14 +88,28 @@ h3 {
   margin: 0;
 }
 
+.title-container-wrapper {
+  // position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+.container {
+}
+
 .title-container {
-  position: absolute;
+  position: relative;
   z-index: 2;
   // width: 100%;
   margin-left: 20px;
-  // height: 60%;
-  top: 50%;
-  transform: translate(0, -50%);
+  height: 100%;
+  // top: 50%;
+  // transform: translate(0, -50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-top: 64px;
 }
 
 .title {
@@ -114,14 +128,10 @@ h3 {
   font-size: 1.5em;
   text-align: left;
   line-height: 0.9;
-
-  h2 {
-    font-weight: 500;
-  }
-  h3 {
-    margin-top: 16px;
-    font-weight: 500;
-    font-size: 1.5em;
+  width: 60%;
+  margin-top: 32px;
+  @include rwd-below(768px){
+    width: 80%;
   }
 }
 
@@ -169,14 +179,14 @@ img {
 
 .planet1 {
   width: 400px;
-  bottom: 30%;
+  bottom: 35%;
   right: 20%;
   animation: float-up-down 12s ease infinite;
 }
 
 .planet2 {
   top: 30%;
-  right: 20%;
+  right: 15%;
   animation: float-up-down 10s ease infinite;
 }
 
@@ -213,7 +223,6 @@ img {
 
 .cage {
   width: 800px;
-  
 }
 
 @keyframes float-up-down {
