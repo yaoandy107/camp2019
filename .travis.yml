@@ -1,7 +1,8 @@
 sudo: false
 language: node_js
 node_js:
-- '8'
+- '10'
+cache: yarn
 branches:
   only:
   - master
@@ -14,3 +15,18 @@ deploy:
   local_dir: dist/
   on:
     branch: master
+
+after_deploy:
+  - git config --global user.name "sitcon-tw-bot"
+  - git config --global user.email "contact@sitcon.org"
+  - git config --global push.default simple
+  - git clone --depth 1 --branch gh-pages https://$GITHUB_TOKEN@github.com/sitcon-tw/camp
+  - cd camp
+  - git submodule init
+  - git submodule update
+  - cd 2019
+  - git checkout gh-pages
+  - git pull origin gh-pages
+  - cd ../
+  - git commit -a -m "Update submodule 2019"
+  - git push -f --quiet
