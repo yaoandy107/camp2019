@@ -1,5 +1,7 @@
 # CAMP2019
 
+[![Build Status](https://travis-ci.org/sitcon-tw/camp2019.svg?branch=master)](https://travis-ci.org/sitcon-tw/camp2019)
+
 ## Project setup
 ```
 yarn install
