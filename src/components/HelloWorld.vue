@@ -29,6 +29,10 @@
       <div v-scroll-reveal class="page">
         <p>2012 年中，一群學生在社群浪潮中為相同的理想聚集，秉持「以學生為本、由學生自發舉辦」的核心理念，SITCON 學生計算機年會及同名社群自 2013 年起，陸續舉行年會、定期聚、黑客松、工作坊、夏令營與多場演講，於技術交流之餘，亦在推廣資訊及開源教育上不遺餘力，希望透過技術與知識的激盪，給予學生們一個用自身力量實踐夢想的舞台。</p>
       </div>
+      <h2 v-scroll-reveal>課程</h2>
+      <div v-scroll-reveal class="page">
+        <time-table />
+      </div>
       <div id="code-of-conduct" class="anchor"></div>
       <h2>
         行為準則
@@ -76,7 +80,12 @@
 </template>
 
 <script>
+import TimeTable from './TimeTable.vue'
+
 export default {
+  components: {
+    TimeTable
+  },
   name: "HelloWorld",
   props: {
     msg: String
