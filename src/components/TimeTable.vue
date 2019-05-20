@@ -3,12 +3,13 @@
     <table>
       <thead>
         <tr>
+          <th class="time">7:00</th>
           <th v-for="head in heads" :key="head">{{ head }}</th>
         </tr>
       </thead>
       <tbody>
         <tr v-for="index in indexes" :key="index">
-          <td class="time">{{ times[index] + ' ~ ' + times[index + 1] }}</td>
+          <td class="time">{{ /*times[index] + ' ~ ' +*/ times[index + 1] }}</td>
           <template v-for="day in days">
             <td
               v-if="getEvent(times[index], day) !== undefined"
@@ -20,6 +21,9 @@
               <h5>{{ getEvent(times[index], day).subTitle }}</h5>
             </td>
           </template>
+        </tr>
+        <tr>
+          <td class="hidden">.</td>
         </tr>
       </tbody>
     </table>
@@ -38,7 +42,7 @@ export default {
     return {
       start: '07:30',
       end: '22:00',
-      heads: ['', 'Day 1', 'Day 2', 'Day 3', 'Day 4', 'Day 5'],
+      heads: ['Day 1', 'Day 2', 'Day 3', 'Day 4', 'Day 5'],
       days: ['1', '2', '3', '4', '5'],
       events: events
     }
@@ -87,19 +91,27 @@ export default {
 
 <style lang="sass" scoped>
 #TimeTable
-  overflow: overflow-x
+  overflow-x: auto
+  overflow-y: hidden
 table
   width: 100%
   min-width: 600px
   box-sizing: border-box
   border-collapse: separate
+  background-color: rgba(0,0,0,0.5)
   th,td
     vertical-align: middle
-    border: 1px solid #000
+    border: 1px solid #aaa
+  
     h4,h5
       margin: 0
   .time
     height: 40px
+    transform: translate(0,50%)
+    border: none
+    padding: 2px
   .event
-    width: 130px
+    width: 140px
+  .hidden
+    opacity: 0
 </style>

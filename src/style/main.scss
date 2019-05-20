@@ -3,6 +3,18 @@
 @import "typography.scss";
 @import "theme.scss";
 
+@mixin rwd-above($min) {
+    @media screen and (min-width: $min) {
+        @content;
+    }
+}
+
+@mixin rwd-below($max) {
+    @media screen and (max-width: $max) {
+        @content;
+    }
+}
+
 html {
     scroll-behavior: smooth;
 
@@ -18,6 +30,10 @@ body {
     max-width: $container-max-width;
     margin: auto;
     padding: 0px 12px;
+
+    @include rwd-below(768px) {
+        padding: 0px 6px;
+    }
 }
 
 *::selection {
@@ -28,14 +44,3 @@ body {
 
 
 
-@mixin rwd-above($min) {
-    @media screen and (min-width: $min) {
-        @content;
-    }
-}
-
-@mixin rwd-below($max) {
-    @media screen and (max-width: $max) {
-        @content;
-    }
-}

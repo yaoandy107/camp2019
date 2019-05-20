@@ -27,10 +27,11 @@
 
       <h2 v-scroll-reveal>關於 SITCON</h2>
       <div v-scroll-reveal class="page">
-        <p>2012 年中，一群學生在社群浪潮中為相同的理想聚集，秉持「以學生為本、由學生自發舉辦」的核心理念，SITCON 學生計算機年會及同名社群自 2013 年起，陸續舉行年會、定期聚、黑客松、工作坊、夏令營與多場演講，於技術交流之餘，亦在推廣資訊及開源教育上不遺餘力，希望透過技術與知識的激盪，給予學生們一個用自身力量實踐夢想的舞台。</p>
+        <p>2012 年中，一群學生在社群浪潮中為相同的理想聚集，秉持「以學生為本、由學生自發舉辦」的核心理念，SITCON 學生計算機年會及同名社群自 2013
+          年起，陸續舉行年會、定期聚、黑客松、工作坊、夏令營與多場演講，於技術交流之餘，亦在推廣資訊及開源教育上不遺餘力，希望透過技術與知識的激盪，給予學生們一個用自身力量實踐夢想的舞台。</p>
       </div>
       <h2 v-scroll-reveal>課程</h2>
-      <div v-scroll-reveal class="page">
+      <div v-scroll-reveal>
         <time-table />
       </div>
       <div id="code-of-conduct" class="anchor"></div>
@@ -39,7 +40,9 @@
         <br>Code of Conduct
       </h2>
       <div v-scroll-reveal class="page">
-        <p>SITCON 夏令營期許成為年輕學子踏入資訊世界的引路人，同時我們也致力於為每位成員提供更友善、開放的環境。相信每位進入 SITCON 夏令營的學員及夥伴都值得被尊重，而我們亦將盡力提供最安全的環境，讓參與 SITCON 夏令營的每個人能夠尊重個體間的差異、在社群中相互扶助、並鼓勵所有人揮灑屬於自己的生命色彩。 因此，若有幸能在 SITCON 夏令營與您見面，無論您是以學員、贊助商、工作人員、或是講者的身份參加，我們都希望您配合遵守以下的行為準則：</p>
+        <p>SITCON 夏令營期許成為年輕學子踏入資訊世界的引路人，同時我們也致力於為每位成員提供更友善、開放的環境。相信每位進入 SITCON 夏令營的學員及夥伴都值得被尊重，而我們亦將盡力提供最安全的環境，讓參與
+          SITCON 夏令營的每個人能夠尊重個體間的差異、在社群中相互扶助、並鼓勵所有人揮灑屬於自己的生命色彩。 因此，若有幸能在 SITCON
+          夏令營與您見面，無論您是以學員、贊助商、工作人員、或是講者的身份參加，我們都希望您配合遵守以下的行為準則：</p>
         <ul>
           <li>尊重每一位參與者，將對方的感受放在心上。</li>
           <li>避免使用帶有侮辱、歧視、或具有潛在騷擾意涵的言語及手勢。</li>
@@ -80,34 +83,45 @@
 </template>
 
 <script>
-import TimeTable from './TimeTable.vue'
+  import TimeTable from './TimeTable.vue'
 
-export default {
-  components: {
-    TimeTable
-  },
-  name: "HelloWorld",
-  props: {
-    msg: String
-  }
-};
+  export default {
+    components: {
+      TimeTable
+    },
+    name: "HelloWorld",
+    props: {
+      msg: String
+    }
+  };
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-img {
-  width: 100%;
-}
+  @import "../style/main.scss";
 
-.page {
-  border: solid 1px white;
-  border-radius: 32px;
-  padding: 20px 16px;
-  margin: 16px 0px;
-  background: white;
-  color: black;
-  p {
-    text-align: left;
+  img {
+    width: 100%;
   }
-}
+
+  .page {
+    border: solid 1px white;
+    border-radius: 32px;
+    padding: 20px 16px;
+    margin: 16px 0px;
+    background: white;
+    color: black;
+
+    box-sizing: border-box;
+
+
+    p {
+      text-align: left;
+    }
+
+    @include rwd-below(768px) {
+      padding: 8px 4px;
+    }
+  }
+
 </style>

@@ -2,14 +2,14 @@
 
 @for $i from 1 through 6 {
     h#{$i} {
-        font-size: (7-$i)*0.7em;
-       
+        font-size: (7-$i)*0.55em;
+        line-height: 1.1;
 
         @if $i < 4 {
             font-weight: 900;
-            margin: 120px 0px 40px;
+            margin: 100px 0px 30px;
         }@else{
-            margin: 40px 0px 40px;
+            margin: 30px 0px 20px;
         }
     }
 }
