@@ -10,6 +10,9 @@
   },
   "dependencies": {
     "core-js": "^2.6.5",
+    "lodash.groupby": "^4.6.0",
+    "lodash.range": "^3.2.0",
+    "lodash.uniq": "^4.5.0",
     "vue": "^2.6.10",
     "vue-router": "^3.0.3",
     "vue-scroll-reveal": "^1.0.11"
