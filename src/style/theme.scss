@@ -15,13 +15,13 @@ button{
     padding: 10px;
     font-size: 1.5em;
     border-radius: 8px;
-    background: $color-primary;
+    background: $color-primary-dark;
     border: none;
     font-weight: bold;
     color:white;
     cursor: pointer;
     &:hover{
-        background: $color-primary-dark;
+        background: $color-primary;
     }
     &:active{
         background:black;

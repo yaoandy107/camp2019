@@ -1,20 +1,10 @@
 @import "reset.scss";
+@import "rwd.scss";
 @import "variables.scss";
 @import "typography.scss";
 @import "layout.scss";
 @import "theme.scss";
 
-@mixin rwd-above($min) {
-    @media screen and (min-width: $min) {
-        @content;
-    }
-}
-
-@mixin rwd-below($max) {
-    @media screen and (max-width: $max) {
-        @content;
-    }
-}
 
 html {
     scroll-behavior: smooth;
@@ -41,7 +31,3 @@ body {
     background: black;
     color: white;
 }
-
-
-
-

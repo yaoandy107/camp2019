@@ -1,0 +1,11 @@
+@mixin rwd-above($min) {
+    @media screen and (min-width: $min) {
+        @content;
+    }
+}
+
+@mixin rwd-below($max) {
+    @media screen and (max-width: $max) {
+        @content;
+    }
+}

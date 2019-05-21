@@ -2,15 +2,22 @@
 
 @for $i from 1 through 6 {
     h#{$i} {
-        font-size: (7-$i)*0.55em;
+        font-size: (7-$i)*0.3+.6em;
         line-height: 1.2;
+
+        @include rwd-below(768px) {
+            font-size: (7-$i)*0.3+.25em;
+        }
 
         @if $i < 4 {
             font-weight: 900;
             margin: 100px 0px 30px;
-        }@else{
+        }
+
+        @else {
             margin: 30px 0px 20px;
         }
+
     }
 }
 
@@ -33,6 +40,6 @@ li {
     margin: 5px;
 }
 
-hr{
+hr {
     margin-top: 40px;
 }

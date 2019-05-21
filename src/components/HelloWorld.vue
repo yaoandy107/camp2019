@@ -33,7 +33,7 @@
       </div>
 
       <div class="row">
-        <div class="col-6">
+        <div class="col-6-md">
           <div v-scroll-reveal class="page">
             <h3>廣度課程與短講</h3>
             <p>今年夏令營有別於往年的單一教學方式，而是在不影響一般課程的情況，安排一些廣度課程，讓學員在學習基礎課程之餘，也能學到資訊領域的其他層面，增加自身資訊技能的廣度。
@@ -46,7 +46,7 @@
               夏令營學員的建議，提出值得學員思考、了解的觀點。期望透過縮短講師及學員間的距離，鼓勵學員踴躍提問、參與，進而產生良好的雙向交流。</p>
           </div>
         </div>
-        <div class="col-6">
+        <div class="col-6-md">
           <div v-scroll-reveal class="page">
             <h3>社群闖關</h3>
             <p>社群闖關邀請到許多資訊相關社群前來擺攤，藉由互動遊戲、影片欣賞、專人介紹…等方式，讓學員認識所謂「社群」，並對開源活動有初步了解。點選課表可檢視詳細的社群資訊。</p>
@@ -64,8 +64,11 @@
 
 
       <div class="container">
-        <h4>今年，<br>
-          SITCON 夏令營將為學員打造一場專屬的小型黑客松，取代傳統的晚會、唱歌跳舞等活動，以小隊為單位，在吃吃喝喝的同時，一起發揮創意、運用課程中所學，做出與眾不同的作品呈現！</h4>
+        <h4>今年，SITCON 夏令營將為學員打造一場專屬的小型黑客松，<br>
+        取代傳統的晚會、唱歌跳舞等活動，以小隊為單位，<br>
+        在吃吃喝喝的同時，
+        一起發揮創意、運用課程中所學，<br>
+        做出與眾不同的作品呈現！</h4>
       </div>
 
       <div id="signup" class="anchor"></div>
@@ -75,21 +78,21 @@
         <h4>活動費用</h4>
         <div class="row">
           <div class="col-6">
-            個人報名<br>
-            6500元/人
+            <h5>個人報名</h5>
+            6500 元 /人
           </div>
           <div class="col-6">
-            團體報名<br>
-            5900元/人
+            <h5>團隊報名</h5>
+            5900 元 /人
           </div>
         </div>
         <hr>
         <p>三人同時報名，視為團體報名，每團以三人為限，請詳閱
-          <a href="#">活動報名簡章。</a> </p>
+          <a href="https://drive.google.com/file/d/1YfxLL2Kg6AG1Ol3i_ecgu_4SweCiBI0H/view">活動報名簡章。</a> </p>
         <p>本次夏令營預計招收學員 60 名，我們會針對報名資料做簡易審查，非先報先贏。</p>
         <p>正取學員名單將於 2019 / 06 / 18 公佈，正取學員需完成報名費繳交，始完成報名程序。</p>
         <p>另設有補助名額，請詳閱
-          <a href="https://drive.google.com/file/d/1nHNMDzgDH8s7isxoH0_8mF8gIVP2lo5p/view?usp=sharing">
+          <a href="https://drive.google.com/file/d/1nHNMDzgDH8s7isxoH0_8mF8gIVP2lo5p/view">
             補助辦法。</a>
           <hr>
         </p>
@@ -99,12 +102,12 @@
           <button>立即報名</button>
         </a>
         <div class="row">
-          <div class="col-6">
+          <div class="col-6-md">
             <h4>活動時間</h4>
             <h5>8/7(三) ~ 8/11(日) <br>(五天四夜)
             </h5>
           </div>
-          <div class="col-6">
+          <div class="col-6-md">
             <h4>活動地點</h4>
             <h5>
               國立臺灣海洋大學 <br>
@@ -117,7 +120,7 @@
         <ul>
 
           <li>本次活動採用 KKTIX 售票進行報名，請詳細閱讀
-            <a href="#">活動報名簡章</a>。
+            <a href="https://drive.google.com/file/d/1YfxLL2Kg6AG1Ol3i_ecgu_4SweCiBI0H/view">活動報名簡章</a>。
           </li>
           <li>正式取得學員資格後不得轉讓予他人使用，轉讓者將取消資格。</li>
           <li>繳費完成始完成報名程序，正取學員若未於期限內繳交報名費用，將取消資格，由備取者遞補。</li>
@@ -205,7 +208,7 @@
     border: solid 1px white;
     border-radius: 32px;
     padding: 20px 16px;
-    margin: 16px 0px;
+    margin: 16px 0px 0px;
     background: white;
     color: black;
 
