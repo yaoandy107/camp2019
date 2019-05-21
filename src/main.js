@@ -9,10 +9,10 @@ Vue.config.productionTip = false
 
 Vue.use(VueScrollReveal, {
   class: 'v-scroll-reveal', // A CSS class applied to elements with the v-scroll-reveal directive; useful for animation overrides.
-  duration: 1200,
+  duration: 600,
   scale: .5,
   distance: '10px',
-  mobile: false
+  mobile: true
 });
 
 new Vue({

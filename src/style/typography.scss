@@ -3,7 +3,7 @@
 @for $i from 1 through 6 {
     h#{$i} {
         font-size: (7-$i)*0.55em;
-        line-height: 1.1;
+        line-height: 1.2;
 
         @if $i < 4 {
             font-weight: 900;

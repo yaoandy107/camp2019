@@ -57,7 +57,7 @@ export default {
 
       var now = (Date.now() * 0.0002) % 1;
 
-      for (var i = 0; i < 120; i++) {
+      for (var i = 0; i < 100; i++) {
         var x = random(i * 6) * this.canvas.width;
         var y = random(i * 6 + 1) * this.canvas.height;
         var z = random(i * 6 + 2);
@@ -71,11 +71,11 @@ export default {
 
         // zoom effect
         x =
-          (x - this.canvas.width / 2) * (this.offsetZ * z + 1) +
-          this.canvas.width / 2;
+          (x - innerWidth / 2) * (this.offsetZ * z + 1) +
+          innerWidth / 2;
         y =
-          (y - this.canvas.height / 2) * (this.offsetZ * z + 1) +
-          this.canvas.height / 2;
+          (y - innerHeight / 2) * (this.offsetZ * z + 1) +
+          innerHeight / 2;
 
         // draw
         this.ctx.save();

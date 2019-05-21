@@ -27,7 +27,7 @@ function Setup(canvas) {
 
   // document.body.appendChild(canvas)
 
-  let blurRadius = 100
+  let blurRadius = 50
   let scalePixel = 200
 
   
@@ -109,7 +109,7 @@ function Setup(canvas) {
   }
 
   let ellipses = []
-  for (var i = 0; i < 10; i++) ellipses.push(new FadeEllipse(i / 10))
+  for (var i = 0; i < 5; i++) ellipses.push(new FadeEllipse(i / 5))
 
 
   let lastScroll = window.pageYOffset
