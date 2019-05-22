@@ -17,8 +17,8 @@ deploy:
     branch: master
 
 after_deploy:
-  - git config --global user.name "sitcon-tw-bot"
-  - git config --global user.email "contact@sitcon.org"
+  - git config --global user.name "yoyo930021"
+  - git config --global user.email "yoyo930021@gmail.com"
   - git config --global push.default simple
   - git clone --depth 1 --branch gh-pages https://$GITHUB_TOKEN@github.com/sitcon-tw/camp
   - cd camp
