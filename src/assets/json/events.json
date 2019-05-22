@@ -46,7 +46,7 @@
   },
   {
     "title": "",
-    "subTitle": "Python 3",
+    "subTitle": "基礎入門課程 I\nPython 介紹、基礎語法",
     "time": {
       "day": "1",
       "start": "13:30",
@@ -73,7 +73,7 @@
   },
   {
     "title": "",
-    "subTitle": "Python 3",
+    "subTitle": "基礎入門課程 II\nPython 基礎資料結構",
     "time": {
       "day": "1",
       "start": "18:30",
@@ -100,7 +100,7 @@
   },
   {
     "title": "",
-    "subTitle": "認識 Telegram Bot",
+    "subTitle": "Telegram Bot Game",
     "time": {
       "day": "2",
       "start": "8:00",
@@ -109,7 +109,7 @@
   },
   {
     "title": "",
-    "subTitle": "Python 3",
+    "subTitle": "基礎入門課程 III\nPython Function 系列",
     "time": {
       "day": "2",
       "start": "9:00",
@@ -127,7 +127,7 @@
   },
   {
     "title": "",
-    "subTitle": "廣度課程",
+    "subTitle": "資訊安全觀念入門",
     "time": {
       "day": "2",
       "start": "13:30",
@@ -136,7 +136,7 @@
   },
   {
     "title": "",
-    "subTitle": "HTTP / Restful",
+    "subTitle": "HTTP / RESTful 觀念與實作",
     "time": {
       "day": "2",
       "start": "14:30",
@@ -190,7 +190,7 @@
   },
   {
     "title": "",
-    "subTitle": "Python3 × HTTP",
+    "subTitle": "站在巨人的左肩\npackage management\npip & requests\nhandle json data",
     "time": {
       "day": "3",
       "start": "9:00",
@@ -208,7 +208,7 @@
   },
   {
     "title": "",
-    "subTitle": "廣度課程",
+    "subTitle": "資訊視野拓展",
     "time": {
       "day": "3",
       "start": "13:30",
@@ -217,7 +217,7 @@
   },
   {
     "title": "",
-    "subTitle": "Telegram bot",
+    "subTitle": "站在巨人的右肩\ntelepot",
     "time": {
       "day": "3",
       "start": "14:30",
@@ -271,7 +271,7 @@
   },
   {
     "title": "",
-    "subTitle": "開源精神短講",
+    "subTitle": "開源精神分享",
     "time": {
       "day": "4",
       "start": "10:00",
@@ -280,7 +280,7 @@
   },
   {
     "title": "",
-    "subTitle": "社群闖關(含午餐)",
+    "subTitle": "社群闖關 & 午餐",
     "time": {
       "day": "4",
       "start": "11:00",
