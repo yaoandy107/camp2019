@@ -65,10 +65,10 @@
 
       <div class="container">
         <h4>今年，SITCON 夏令營將為學員打造一場專屬的小型黑客松，<br>
-        取代傳統的晚會、唱歌跳舞等活動，以小隊為單位，<br>
-        在吃吃喝喝的同時，
-        一起發揮創意、運用課程中所學，<br>
-        做出與眾不同的作品呈現！</h4>
+          取代傳統的晚會、唱歌跳舞等活動，以小隊為單位，<br>
+          在吃吃喝喝的同時，
+          一起發揮創意、運用課程中所學，<br>
+          做出與眾不同的作品呈現！</h4>
       </div>
 
       <div id="signup" class="anchor"></div>
@@ -93,9 +93,13 @@
         <p>正取學員名單將於 2019 / 06 / 18 公佈，正取學員需完成報名費繳交，始完成報名程序。</p>
         <p>另設有補助名額，請詳閱
           <a href="https://drive.google.com/file/d/1nHNMDzgDH8s7isxoH0_8mF8gIVP2lo5p/view">
-            補助辦法。</a>
-          <hr>
+            補助辦法</a>。
         </p>
+        <p>
+          關於退費事宜，請見
+          <a href="https://docs.google.com/document/d/1-2yYZS-Hv0ntQ1zA5MCu8bIzXgXWOGVzTvCCXystmVA">退費說明文件</a>。
+        </p>
+        <hr>
         <h4>報名時間</h4>
         <h5>即日起至 2019 / 06 / 07 止</h5>
         <a href="https://sitcon.kktix.cc/events/sitcon-camp2019" target="blank">
