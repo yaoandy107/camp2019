@@ -19,6 +19,7 @@ deploy:
     branch: master
 
 after_deploy:
+  - sleep 120 # waiting for camp2019 gh-pages build
   - git config --global user.name "sitcon-tw-bot"
   - git config --global user.email "contact@sitcon.org"
   - git config --global push.default simple
