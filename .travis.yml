@@ -1,5 +1,7 @@
 sudo: false
 language: node_js
+git:
+  submodules: false
 node_js:
 - '10'
 cache: yarn
@@ -17,6 +19,7 @@ deploy:
     branch: master
 
 after_deploy:
+  - sleep 30 # waiting for camp2019 gh-pages build
   - git config --global user.name "sitcon-tw-bot"
   - git config --global user.email "contact@sitcon.org"
   - git config --global push.default simple
