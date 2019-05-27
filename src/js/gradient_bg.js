@@ -1,7 +1,5 @@
 /* eslint-disable no-func-assign */
-function Setup(canvas) {
-
-
+function Setup (canvas) {
   // const canvas = document.getElementById('background_dots')
   const canvas2 = document.createElement('canvas')
 
@@ -9,7 +7,7 @@ function Setup(canvas) {
   const ctx2 = canvas2.getContext('2d')
 
   // fix ellipse on ie11
-  function drawEllipse(context, x, y, w, h) {
+  function drawEllipse (context, x, y, w, h) {
     context.ellipse(x, y, w, h, 0, 0, Math.PI * 2, false)
   }
 
@@ -29,8 +27,6 @@ function Setup(canvas) {
 
   let blurRadius = 50
   let scalePixel = 200
-
-  
 
   // ___________________get mouse input___________________
 
@@ -58,7 +54,7 @@ function Setup(canvas) {
   let cycleTime = 0
   let cycleStep = 0.005
 
-  function FadeEllipse(cycleOffset) {
+  function FadeEllipse (cycleOffset) {
     this.r = 0
     this.g = 0
     this.b = 0
@@ -111,7 +107,6 @@ function Setup(canvas) {
   let ellipses = []
   for (var i = 0; i < 5; i++) ellipses.push(new FadeEllipse(i / 5))
 
-
   let lastScroll = window.pageYOffset
   // window.addEventListener('scroll', function () {
   //   let delta = window.pageYOffset - lastScroll
@@ -119,7 +114,7 @@ function Setup(canvas) {
   //   speedFactor += Math.abs(delta) * 0.04
   // })
 
-  return function cycle() {
+  return function cycle () {
     ctx.save()
     const scale = window.devicePixelRatio
     canvas2.width = (canvas.width = window.innerWidth * scale + blurRadius * 2) / scalePixel
@@ -153,9 +148,6 @@ function Setup(canvas) {
     ctx.restore()
   }
   // requestAnimationFrame(cycle)
-
-
 }
-
 
 export default Setup

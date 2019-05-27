@@ -2,9 +2,17 @@
   <div class="hello">
     <div class="container">
       <p>|</p>
-      <div id="about" class="anchor"></div>
-      <h2 v-scroll-reveal>關於夏令營</h2>
-      <div v-scroll-reveal class="page">
+      <div
+        id="about"
+        class="anchor"
+      />
+      <h2 v-scroll-reveal>
+        關於夏令營
+      </h2>
+      <div
+        v-scroll-reveal
+        class="page"
+      >
         <p>
           有鑑於資訊領域逐漸成為科技時代的重要學門，社群與開源精神亦持續抬頭，SITCON 團隊認為將資訊教育向下扎根，為在資訊科學領域有興趣的學生提供一個親切而良好的機會入門，並播灑開源種子，是一件相當重要且值得去做的事情。
         </p>
@@ -21,37 +29,63 @@
         </p>
       </div>
 
-      <h2 v-scroll-reveal>關於 SITCON</h2>
-      <div v-scroll-reveal class="page">
+      <h2 v-scroll-reveal>
+        關於 SITCON
+      </h2>
+      <div
+        v-scroll-reveal
+        class="page"
+      >
         <p>學生計算機年會（SITCON）以學生為本、由學生自發舉辦，長期投身學生資訊教育與推廣開源精神，希望引領更多學子踏入資訊的殿堂，更冀望所有對資訊有興趣的學生，能夠在年會裏齊聚一堂，彼此激盪、傳承、啟發，達到「學以致用、教學相長」的實際展現。SITCON 也是一個屬於學生的舞台，讓學子們實踐、體驗開源社群精神：開放、分享、協作，貢獻一己之長一同讓 SITCON 更好。SITCON 也提供發表自身所學所長的舞台，讓更多人看見你的努力、你的改變！</p>
         <p>即使你不會寫程式，但總有你可以做的事！不要害羞，現在就加入我們吧！</p>
       </div>
-      <div id="course" class="anchor"></div>
-      <h2 v-scroll-reveal>課程</h2>
+      <div
+        id="course"
+        class="anchor"
+      />
+      <h2 v-scroll-reveal>
+        課程
+      </h2>
       <div v-scroll-reveal>
         <time-table />
       </div>
 
       <div class="row">
         <div class="col-6-md">
-          <div v-scroll-reveal class="page">
+          <div
+            v-scroll-reveal
+            class="page"
+          >
             <h3>廣度課程與短講</h3>
-            <p>今年夏令營有別於往年的單一教學方式，而是在不影響一般課程的情況，安排一些廣度課程，讓學員在學習基礎課程之餘，也能學到資訊領域的其他層面，增加自身資訊技能的廣度。
-              除基礎課程與廣度課程外，我們也邀請到許多在資訊領域打滾多年的人士分享自身經驗，期許迷茫中的學員，可以點燃未來的一盞明燈，在資訊道路上有前進的動力及方向。</p>
+            <p>
+              今年夏令營有別於往年的單一教學方式，而是在不影響一般課程的情況，安排一些廣度課程，讓學員在學習基礎課程之餘，也能學到資訊領域的其他層面，增加自身資訊技能的廣度。
+              除基礎課程與廣度課程外，我們也邀請到許多在資訊領域打滾多年的人士分享自身經驗，期許迷茫中的學員，可以點燃未來的一盞明燈，在資訊道路上有前進的動力及方向。
+            </p>
           </div>
-          <div v-scroll-reveal class="page">
+          <div
+            v-scroll-reveal
+            class="page"
+          >
             <h3>視界咖啡館</h3>
-            <p>視界咖啡館參考自世界咖啡館（The World Café），在本次夏令營中，我們邀請到各領域及社群前輩，將傳統座談會形式改以小組討論的樣貌呈現，並與學員分享工作經驗、學習過程、面對困難的解決方式或希望給予
+            <p>
+              視界咖啡館參考自世界咖啡館（The World Café），在本次夏令營中，我們邀請到各領域及社群前輩，將傳統座談會形式改以小組討論的樣貌呈現，並與學員分享工作經驗、學習過程、面對困難的解決方式或希望給予
               SITCON
-              夏令營學員的建議，提出值得學員思考、了解的觀點。期望透過縮短講師及學員間的距離，鼓勵學員踴躍提問、參與，進而產生良好的雙向交流。</p>
+              夏令營學員的建議，提出值得學員思考、了解的觀點。期望透過縮短講師及學員間的距離，鼓勵學員踴躍提問、參與，進而產生良好的雙向交流。
+            </p>
           </div>
         </div>
         <div class="col-6-md">
-          <div v-scroll-reveal class="page">
+          <div
+            v-scroll-reveal
+            class="page"
+          >
             <h3>社群闖關</h3>
             <p>社群闖關邀請到許多資訊相關社群前來擺攤，藉由互動遊戲、影片欣賞、專人介紹…等方式，讓學員認識所謂「社群」，並對開源活動有初步了解。點選課表可檢視詳細的社群資訊。</p>
           </div>
-          <div v-scroll-reveal class="page">
+          <div
+            v-scroll-reveal
+            class="page"
+          >
             <h3>Hackathon</h3>
             <p>
               黑客松（Hackathon）是「黑客」（Hack；原指早期為電腦系統找尋不完美的地方，或是探索不同的解法，來改善電腦系統）跟「馬拉松」（Marathon）的組合字，顧名思義，也就像是程式設計、工程界的馬拉松。由有興趣的一群人在有限的時間內，發揮自己的專長做出一個有特色的專案。
@@ -60,21 +94,27 @@
         </div>
       </div>
 
-
-
-
       <div class="container">
-        <h4>今年，SITCON 夏令營將為學員打造一場專屬的小型黑客松，<br>
+        <h4>
+          今年，SITCON 夏令營將為學員打造一場專屬的小型黑客松，<br>
           取代傳統的晚會、唱歌跳舞等活動，以小隊為單位，<br>
           在吃吃喝喝的同時，
           一起發揮創意、運用課程中所學，<br>
-          做出與眾不同的作品呈現！</h4>
+          做出與眾不同的作品呈現！
+        </h4>
       </div>
 
-      <div id="signup" class="anchor"></div>
-      <h2 v-scroll-reveal>報名</h2>
-      <div v-scroll-reveal class="page">
-
+      <div
+        id="signup"
+        class="anchor"
+      />
+      <h2 v-scroll-reveal>
+        報名
+      </h2>
+      <div
+        v-scroll-reveal
+        class="page"
+      >
         <h4>活動費用</h4>
         <div class="row">
           <div class="col-6">
@@ -87,11 +127,14 @@
           </div>
         </div>
         <hr>
-        <p>三人同時報名，視為團體報名，每團以三人為限，請詳閱
-          <a href="https://drive.google.com/file/d/1YfxLL2Kg6AG1Ol3i_ecgu_4SweCiBI0H/view">活動報名簡章。</a> </p>
+        <p>
+          三人同時報名，視為團體報名，每團以三人為限，請詳閱
+          <a href="https://drive.google.com/file/d/1YfxLL2Kg6AG1Ol3i_ecgu_4SweCiBI0H/view">活動報名簡章。</a>
+        </p>
         <p>本次夏令營預計招收學員 60 名，我們會針對報名資料做簡易審查，非先報先贏。</p>
         <p>正取學員名單將於 2019 / 06 / 18 公佈，正取學員需完成報名費繳交，始完成報名程序。</p>
-        <p>另設有補助名額，請詳閱
+        <p>
+          另設有補助名額，請詳閱
           <a href="https://drive.google.com/file/d/1nHNMDzgDH8s7isxoH0_8mF8gIVP2lo5p/view">
             補助辦法</a>。
         </p>
@@ -102,13 +145,17 @@
         <hr>
         <h4>報名時間</h4>
         <h5>即日起至 2019 / 06 / 07 止</h5>
-        <a href="https://sitcon.kktix.cc/events/sitcon-camp2019" target="blank">
+        <a
+          href="https://sitcon.kktix.cc/events/sitcon-camp2019"
+          target="blank"
+        >
           <button>立即報名</button>
         </a>
         <div class="row">
           <div class="col-6-md">
             <h4>活動時間</h4>
-            <h5>8/7(三) ~ 8/11(日) <br>(五天四夜)
+            <h5>
+              8/7(三) ~ 8/11(日) <br>(五天四夜)
             </h5>
           </div>
           <div class="col-6-md">
@@ -122,31 +169,40 @@
 
         <h4>注意事項</h4>
         <ul>
-
-          <li>本次活動採用 KKTIX 售票進行報名，請詳細閱讀
+          <li>
+            本次活動採用 KKTIX 售票進行報名，請詳細閱讀
             <a href="https://drive.google.com/file/d/1YfxLL2Kg6AG1Ol3i_ecgu_4SweCiBI0H/view">活動報名簡章</a>。
           </li>
           <li>正式取得學員資格後不得轉讓予他人使用，轉讓者將取消資格。</li>
           <li>繳費完成始完成報名程序，正取學員若未於期限內繳交報名費用，將取消資格，由備取者遞補。</li>
           <li>錄取通知以及行前注意等資訊，均將透過報名時所留下之電子郵件通知學員，請務必定期檢查信箱，以確保個人權益。</li>
           <li>團體報名不保證所有團員皆錄取，唯團報經錄取者，皆可享有團體報名優惠。</li>
-          <li>有任何問題歡迎來信至
+          <li>
+            有任何問題歡迎來信至
             <a href="mailto:ask@sitcon.camp">ask@sitcon.camp</a>
-            ， 我們將儘速回覆您。</li>
+            ， 我們將儘速回覆您。
+          </li>
         </ul>
       </div>
 
-
-      <div id="code-of-conduct" class="anchor"></div>
+      <div
+        id="code-of-conduct"
+        class="anchor"
+      />
 
       <h2 v-scroll-reveal>
         行為準則
         <br>Code of Conduct
       </h2>
-      <div v-scroll-reveal class="page">
-        <p>SITCON 夏令營期許成為年輕學子踏入資訊世界的引路人，同時我們也致力於為每位成員提供更友善、開放的環境。相信每位進入 SITCON 夏令營的學員及夥伴都值得被尊重，而我們亦將盡力提供最安全的環境，讓參與
+      <div
+        v-scroll-reveal
+        class="page"
+      >
+        <p>
+          SITCON 夏令營期許成為年輕學子踏入資訊世界的引路人，同時我們也致力於為每位成員提供更友善、開放的環境。相信每位進入 SITCON 夏令營的學員及夥伴都值得被尊重，而我們亦將盡力提供最安全的環境，讓參與
           SITCON 夏令營的每個人能夠尊重個體間的差異、在社群中相互扶助、並鼓勵所有人揮灑屬於自己的生命色彩。 因此，若有幸能在 SITCON
-          夏令營與您見面，無論您是以學員、贊助商、工作人員、或是講者的身份參加，我們都希望您配合遵守以下的行為準則：</p>
+          夏令營與您見面，無論您是以學員、贊助商、工作人員、或是講者的身份參加，我們都希望您配合遵守以下的行為準則：
+        </p>
         <ul>
           <li>尊重每一位參與者，將對方的感受放在心上。</li>
           <li>避免使用帶有侮辱、歧視、或具有潛在騷擾意涵的言語及手勢。</li>
@@ -155,7 +211,10 @@
           <li>在夏令營裡多交朋友，珍惜彼此相聚的時光！</li>
         </ul>
       </div>
-      <div v-scroll-reveal class="page">
+      <div
+        v-scroll-reveal
+        class="page"
+      >
         <h4>以下的行為是不被容忍的：</h4>
         <ul>
           <li>針對性別、性向、種族、外貌、宗教、年齡、身體狀況或個人身份的挑釁或冒犯。</li>
@@ -166,7 +225,10 @@
           <li>任何違反法律的行為。</li>
         </ul>
       </div>
-      <div v-scroll-reveal class="page">
+      <div
+        v-scroll-reveal
+        class="page"
+      >
         <p>為了確保每位參與者的安全，我們將恪守以上規則。</p>
         <p>
           對於違反行為準則者，我們將採取必要且合理的手段予以介入，包含但不限於將參與者請離現場、自相關名冊除名或列為不受歡迎對象，或在必要時移送警察機關法辦。
@@ -187,17 +249,17 @@
 </template>
 
 <script>
-  import TimeTable from './TimeTable.vue'
+import TimeTable from './TimeTable.vue'
 
-  export default {
-    components: {
-      TimeTable
-    },
-    name: "HelloWorld",
-    props: {
-      msg: String
-    }
-  };
+export default {
+  name: 'HelloWorld',
+  components: {
+    TimeTable
+  },
+  props: {
+    msg: String
+  }
+}
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
@@ -217,7 +279,6 @@
     color: black;
 
     box-sizing: border-box;
-
 
     p {
       text-align: left;

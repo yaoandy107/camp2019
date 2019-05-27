@@ -1,29 +1,42 @@
 <template>
-  <div id="nav" :class="{
+  <div
+    id="nav"
+    :class="{
       scrolled: scrolled
-    }">
-    <div class="bg"></div>
+    }"
+  >
+    <div class="bg" />
     <div class="container">
       <div class="list">
         <div class="block block-home">
-          <router-link to="/#home">CAMP 2019</router-link>
-          <div class="underline"></div>
+          <router-link to="/#home">
+            CAMP 2019
+          </router-link>
+          <div class="underline" />
         </div>
         <div class="block block-about">
-          <router-link to="/#about">關於</router-link>
-          <div class="underline"></div>
+          <router-link to="/#about">
+            關於
+          </router-link>
+          <div class="underline" />
         </div>
         <div class="block block-course">
-          <router-link to="/#course">課程</router-link>
-          <div class="underline"></div>
+          <router-link to="/#course">
+            課程
+          </router-link>
+          <div class="underline" />
         </div>
         <div class="block block-signup">
-          <router-link to="/#signup">報名</router-link>
-          <div class="underline"></div>
+          <router-link to="/#signup">
+            報名
+          </router-link>
+          <div class="underline" />
         </div>
         <div class="block block-code-of-conduct">
-          <router-link to="/#code-of-conduct">行為準則</router-link>
-          <div class="underline"></div>
+          <router-link to="/#code-of-conduct">
+            行為準則
+          </router-link>
+          <div class="underline" />
         </div>
       </div>
     </div>
@@ -32,60 +45,61 @@
 
 <script>
 export default {
-  name: "NavBar",
-  data() {
+  name: 'NavBar',
+  data () {
     return {
       scrolled: false,
       targets: [],
-      current: ""
-    };
+      current: ''
+    }
+  },
+  created () {
+    window.addEventListener('scroll', this.onScroll)
+    window.addEventListener('mousewheel', this.onScroll)
+    window.addEventListener('touchmove', this.onScroll)
+  },
+  mounted () {
+    this.targets = document.querySelectorAll('.anchor')
+    this.onScroll()
+    console.log(this.targets)
+  },
+  destroyed () {
+    window.removeEventListener('scroll', this.onScroll)
+    window.removeEventListener('mousewheel', this.onScroll)
+    window.removeEventListener('touchmove', this.onScroll)
   },
   methods: {
-    onScroll(e) {
-      this.scrolled = window.pageYOffset > 20;
+    onScroll (e) {
+      this.scrolled = window.pageYOffset > 20
 
-      var target = null;
+      var target = null
       this.targets.forEach(e => {
-        var y = e.getBoundingClientRect().y;
-        y -= innerHeight / 2;
-        if (y > 0) return;
-        if (target == null || y > target.y)
+        var y = e.getBoundingClientRect().y
+        y -= innerHeight / 2
+        if (y > 0) return
+        if (target == null || y > target.y) {
           target = {
             e,
             y
-          };
-      });
+          }
+        }
+      })
 
       if (target) {
         // console.log(target.e);
-        //window.location.hash = "#" + target.e.id;
+        // window.location.hash = "#" + target.e.id;
         document
-          .querySelectorAll(".underline-show")
-          .forEach(x => x.classList.remove("underline-show"));
+          .querySelectorAll('.underline-show')
+          .forEach(x => x.classList.remove('underline-show'))
         document
-          .querySelector(".block-" + target.e.id + " .underline")
-          .classList.add("underline-show");
-        if (e == null || (e.type != "mousewheel" && e.type != "touchmove")) {
-        } else this.$router.push("");
+          .querySelector('.block-' + target.e.id + ' .underline')
+          .classList.add('underline-show')
+        if (e == null || (e.type != 'mousewheel' && e.type != 'touchmove')) {
+        } else this.$router.push('')
       }
     }
-  },
-  created() {
-    window.addEventListener("scroll", this.onScroll);
-    window.addEventListener("mousewheel", this.onScroll);
-    window.addEventListener("touchmove", this.onScroll);
-  },
-  mounted() {
-    this.targets = document.querySelectorAll(".anchor");
-    this.onScroll();
-    console.log(this.targets);
-  },
-  destroyed() {
-    window.removeEventListener("scroll", this.onScroll);
-    window.removeEventListener("mousewheel", this.onScroll);
-    window.removeEventListener("touchmove", this.onScroll);
   }
-};
+}
 </script>
 
 <style scoped lang="scss">
