@@ -1,27 +1,58 @@
 <template>
   <div class="cover">
     <div class="overlay">
-      <slot></slot>
+      <slot />
     </div>
     <div class="visual-container">
-      <div v-scroll-reveal class="planet planet2">
-        <img class="planet2-body" alt="green planet" src="../assets/planet_green.svg">
+      <div
+        v-scroll-reveal
+        class="planet planet2"
+      >
+        <img
+          class="planet2-body"
+          alt="green planet"
+          src="../assets/planet_green.svg"
+        >
         <div class="rotate">
-          <img class="curvetext" alt="SITCON CAMP 2019" src="../assets/curved text.png">
+          <img
+            class="curvetext"
+            alt="SITCON CAMP 2019"
+            src="../assets/curved text.png"
+          >
         </div>
       </div>
-      <div v-scroll-reveal class="planet planet1">
-        <img class="planet1-body" alt="red planet" src="../assets/planet_pink.svg">
-        <img class="cage" alt src="../assets/cage.svg">
+      <div
+        v-scroll-reveal
+        class="planet planet1"
+      >
+        <img
+          class="planet1-body"
+          alt="red planet"
+          src="../assets/planet_pink.svg"
+        >
+        <img
+          class="cage"
+          alt
+          src="../assets/cage.svg"
+        >
       </div>
     </div>
     <div class="title-container-wrapper">
       <div class="container">
         <div class="title-container">
-          <div v-scroll-reveal class="subtitle">
-            <img src="../assets/camp2019.svg" alt="SITCON CAMP 2019 夏令營">
+          <div
+            v-scroll-reveal
+            class="subtitle"
+          >
+            <img
+              src="../assets/camp2019.svg"
+              alt="SITCON CAMP 2019 夏令營"
+            >
           </div>
-          <div v-scroll-reveal class="title">
+          <div
+            v-scroll-reveal
+            class="title"
+          >
             <h1>開源</h1>
             <h1>宇宙</h1>
             <div class="leftborder">
@@ -40,8 +71,8 @@
 
 <script>
 export default {
-  name: "cover"
-};
+  name: 'Cover'
+}
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->

@@ -5,6 +5,7 @@ import Home from './views/Home.vue'
 Vue.use(Router)
 
 export default new Router({
+  mode: 'history',
   routes: [
     {
       path: '/',
@@ -20,7 +21,7 @@ export default new Router({
       component: () => import(/* webpackChunkName: "about" */ './views/About.vue')
     }
   ],
-  scrollBehavior(to, from, savedPosition) {
+  scrollBehavior (to, from, savedPosition) {
     if (to.hash) {
       console.log(to)
       return {

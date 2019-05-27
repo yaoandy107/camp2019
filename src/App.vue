@@ -1,35 +1,41 @@
 <template>
-  <div id="app" :class="{
-    ready
-    }">
-    <NavBar></NavBar>
-    <transition name="fade" mode="out-in">
-      <router-view/>
+  <div
+    id="app"
+    :class="{
+      ready
+    }"
+  >
+    <NavBar />
+    <transition
+      name="fade"
+      mode="out-in"
+    >
+      <router-view />
     </transition>
-    <div class="loading top"></div>
-    <div class="loading bottom"></div>
+    <div class="loading top" />
+    <div class="loading bottom" />
   </div>
 </template>
 <script>
-import NavBar from "@/components/NavBar.vue";
+import NavBar from '@/components/NavBar.vue'
 
 export default {
-  data() {
-    return {
-      ready: false
-    };
-  },
   components: {
     NavBar
   },
-  created() {
-    var me = this;
-    window.addEventListener("load", function(event) {
-      me.ready = true;
-      console.log("ready");
-    });
+  data () {
+    return {
+      ready: false
+    }
+  },
+  created () {
+    var me = this
+    window.addEventListener('load', function (event) {
+      me.ready = true
+      console.log('ready')
+    })
   }
-};
+}
 </script>
 <style lang="scss">
 @import "/style/main.scss";
@@ -40,7 +46,6 @@ export default {
   text-align: center;
 }
 </style>
-
 
 <style scoped lang="scss">
 .fade-enter-active,
@@ -79,4 +84,3 @@ export default {
   }
 }
 </style>
-
