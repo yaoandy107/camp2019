@@ -137,7 +137,7 @@ function Setup (canvas) {
     for (var i in ellipses) ellipses[i].update()
     ctx.clearRect(0, 0, canvas.width, canvas.height)
 
-    ctx.filter = 'blur(' + blurRadius + 'px)'
+    // ctx.filter = 'blur(' + blurRadius + 'px)'
     ctx.drawImage(canvas2, 0, 0, canvas2.width, canvas2.height,
       0 - blurRadius,
       0 - blurRadius,
