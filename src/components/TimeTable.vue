@@ -69,7 +69,7 @@
 import events from '../assets/json/events.json'
 import groupBy from 'lodash.groupby'
 import range from 'lodash.range'
-import uniq from 'lodash.uniq'
+// import uniq from 'lodash.uniq'
 
 function timeToNumber (time) {
   let separated = time.split(':')
@@ -125,7 +125,9 @@ export default {
     },
     getEvent (time, day) {
       // console.log(time, day);
-      if (this.groups[time]) { return this.groups[time].find(element => element.time.day === day) } else return undefined
+      if (this.groups[time]) {
+        return this.groups[time].find(element => element.time.day === day)
+      } else return undefined
     },
     calcRowspan (index, event) {
       let start =

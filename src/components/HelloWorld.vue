@@ -255,9 +255,6 @@ export default {
   name: 'HelloWorld',
   components: {
     TimeTable
-  },
-  props: {
-    msg: String
   }
 }
 </script>

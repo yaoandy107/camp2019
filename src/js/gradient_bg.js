@@ -116,7 +116,7 @@ function Setup (canvas) {
 
   return function cycle () {
     ctx.save()
-    const scale = window.devicePixelRatio
+    const scale = 1
     canvas2.width = (canvas.width = window.innerWidth * scale + blurRadius * 2) / scalePixel
     canvas2.height = (canvas.height = window.innerHeight * scale + blurRadius * 2) / scalePixel
     ctx.scale(scale, scale)

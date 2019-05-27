@@ -94,7 +94,7 @@ export default {
         document
           .querySelector('.block-' + target.e.id + ' .underline')
           .classList.add('underline-show')
-        if (e == null || (e.type != 'mousewheel' && e.type != 'touchmove')) {
+        if (e == null || (e.type !== 'mousewheel' && e.type !== 'touchmove')) {
         } else this.$router.push('')
       }
     }

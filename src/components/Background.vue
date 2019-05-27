@@ -6,18 +6,17 @@
 
 <script>
 import GradientBG from '../js/gradient_bg.js'
-import { version } from 'punycode'
 
 var randomList = []
 for (var i = 0; i < 127; i++) randomList.push(Math.random())
 
 function random (index) {
-  return randomList[
-    Math.floor(
-      randomList[(index * 3) % randomList.length] * index * randomList.length +
-        index
-    ) % randomList.length
-  ]
+  let index2 = (index * 3) % randomList.length
+  let index3 =
+    Math.floor(randomList[index2] * index * randomList.length + index) %
+    randomList.length
+
+  return randomList[index3]
 }
 
 var sourceString = 'SITCONCAMP2019' + 'void main(){}1234567890-=!@#$%^&*()_+'
@@ -85,12 +84,8 @@ export default {
         while (y < -100) y += innerHeight + 300
 
         // zoom effect
-        x =
-          (x - innerWidth / 2) * (this.offsetZ * z + 1) +
-          innerWidth / 2
-        y =
-          (y - innerHeight / 2) * (this.offsetZ * z + 1) +
-          innerHeight / 2
+        x = (x - innerWidth / 2) * (this.offsetZ * z + 1) + innerWidth / 2
+        y = (y - innerHeight / 2) * (this.offsetZ * z + 1) + innerHeight / 2
 
         // draw
         this.ctx.save()
