@@ -35,7 +35,7 @@
       <table class="table-small">
         <template v-for="(event, eid) in day">
           <tr v-if="event.subTitle!=''" :key="eid">
-            <td>{{event.time.start}}~ {{event.time.end}}</td>
+            <td>{{event.time.start}} ~ {{event.time.end}}</td>
             <td>{{event.subTitle}}</td>
           </tr>
         </template>
