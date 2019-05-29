@@ -9,3 +9,10 @@
         @content;
     }
 }
+
+
+.if-mobile {
+    @include rwd-above(768px) {
+        display: none;
+    }
+}
