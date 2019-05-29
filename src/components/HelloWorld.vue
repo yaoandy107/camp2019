@@ -236,11 +236,11 @@
   }
 
   .page {
-    border: solid 2px white;
+    border: solid 1px white;
     border-radius: 32px;
     padding: 20px 16px;
     margin: 16px 0px 0px;
-    background: rgba(255, 255, 255, .7);
+    background: rgba(255, 255, 255, .9);
     color: black;
 
     box-sizing: border-box;
