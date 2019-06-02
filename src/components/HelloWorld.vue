@@ -2,9 +2,17 @@
   <div class="hello">
     <div class="container">
       <p>|</p>
-      <div id="about" class="anchor"/>
-      <h2 v-scroll-reveal>關於夏令營</h2>
-      <div v-scroll-reveal class="page">
+      <div
+        id="about"
+        class="anchor"
+      />
+      <h2 v-scroll-reveal>
+        關於夏令營
+      </h2>
+      <div
+        v-scroll-reveal
+        class="page"
+      >
         <p>有鑑於資訊領域逐漸成為科技時代的重要學門，社群與開源精神亦持續抬頭，SITCON 團隊認為將資訊教育向下扎根，為在資訊科學領域有興趣的學生提供一個親切而良好的機會入門，並播灑開源種子，是一件相當重要且值得去做的事情。</p>
 
         <p>
@@ -19,23 +27,36 @@
         </p>
       </div>
 
-      <h2 v-scroll-reveal>關於 SITCON</h2>
-      <div v-scroll-reveal class="page">
+      <h2 v-scroll-reveal>
+        關於 SITCON
+      </h2>
+      <div
+        v-scroll-reveal
+        class="page"
+      >
         <p>
           學生計算機年會（SITCON）以學生為本、由學生自發舉辦，長期投身學生資訊教育與推廣開源精神，希望引領更多學子踏入資訊的殿堂，更冀望所有對資訊有興趣的學生，能夠在年會裏齊聚一堂，彼此激盪、傳承、啟發，達到「學以致用、教學相長」的實際展現。SITCON
           也是一個屬於學生的舞台，讓學子們實踐、體驗開源社群精神：開放、分享、協作，貢獻一己之長一同讓 SITCON 更好。SITCON 也提供發表自身所學所長的舞台，讓更多人看見你的努力、你的改變！
         </p>
         <p>即使你不會寫程式，但總有你可以做的事！不要害羞，現在就加入我們吧！</p>
       </div>
-      <div id="course" class="anchor"/>
-      <h2 v-scroll-reveal>課程</h2>
+      <div
+        id="course"
+        class="anchor"
+      />
+      <h2 v-scroll-reveal>
+        課程
+      </h2>
       <div v-scroll-reveal>
-        <time-table/>
+        <time-table />
       </div>
 
       <div class="row">
         <div class="col-6-md">
-          <div v-scroll-reveal class="page course">
+          <div
+            v-scroll-reveal
+            class="page course"
+          >
             <h3>廣度課程與短講</h3>
             <p>
               今年夏令營有別於往年的單一教學方式，而是在不影響一般課程的情況，安排一些廣度課程，讓學員在學習基礎課程之餘，也能學到資訊領域的其他層面，增加自身資訊技能的廣度。
@@ -43,13 +64,19 @@
             </p>
           </div>
 
-          <div v-scroll-reveal class="page course">
+          <div
+            v-scroll-reveal
+            class="page course"
+          >
             <h3>社群闖關</h3>
             <p>社群闖關邀請到許多資訊相關社群前來擺攤，藉由互動遊戲、影片欣賞、專人介紹…等方式，讓學員認識所謂「社群」，並對開源活動有初步了解。點選課表可檢視詳細的社群資訊。</p>
           </div>
         </div>
         <div class="col-6-md">
-          <div v-scroll-reveal class="page course">
+          <div
+            v-scroll-reveal
+            class="page course"
+          >
             <h3>視界咖啡館</h3>
             <p>
               視界咖啡館參考自世界咖啡館（The World Café），在本次夏令營中，我們邀請到各領域及社群前輩，將傳統座談會形式改以小組討論的樣貌呈現，並與學員分享工作經驗、學習過程、面對困難的解決方式或希望給予
@@ -58,7 +85,10 @@
             </p>
           </div>
 
-          <div v-scroll-reveal class="page course">
+          <div
+            v-scroll-reveal
+            class="page course"
+          >
             <h3>Hackathon</h3>
             <p>黑客松（Hackathon）是「黑客」（Hack；原指早期為電腦系統找尋不完美的地方，或是探索不同的解法，來改善電腦系統）跟「馬拉松」（Marathon）的組合字，顧名思義，也就像是程式設計、工程界的馬拉松。由有興趣的一群人在有限的時間內，發揮自己的專長做出一個有特色的專案。</p>
           </div>
@@ -76,10 +106,18 @@
           <br>做出與眾不同的作品呈現！
         </h4>
       </div>
-      <studentexp/>
-      <div id="signup" class="anchor"/>
-      <h2 v-scroll-reveal>報名</h2>
-      <div v-scroll-reveal class="page">
+      <studentexp />
+      <div
+        id="signup"
+        class="anchor"
+      />
+      <h2 v-scroll-reveal>
+        報名
+      </h2>
+      <div
+        v-scroll-reveal
+        class="page"
+      >
         <h4>活動費用</h4>
         <div class="row">
           <div class="col-6">
@@ -113,7 +151,10 @@
         <hr>
         <h4>報名時間</h4>
         <h5>即日起至 2019 / 06 / 07 止</h5>
-        <a href="https://sitcon.kktix.cc/events/sitcon-camp2019" target="blank">
+        <a
+          href="https://sitcon.kktix.cc/events/sitcon-camp2019"
+          target="blank"
+        >
           <button>立即報名</button>
         </a>
         <h4>報名資格</h4>
@@ -161,13 +202,19 @@
         </ul>
       </div>
 
-      <div id="code-of-conduct" class="anchor"/>
+      <div
+        id="code-of-conduct"
+        class="anchor"
+      />
 
       <h2 v-scroll-reveal>
         行為準則
         <br>Code of Conduct
       </h2>
-      <div v-scroll-reveal class="page">
+      <div
+        v-scroll-reveal
+        class="page"
+      >
         <p>
           SITCON 夏令營期許成為年輕學子踏入資訊世界的引路人，同時我們也致力於為每位成員提供更友善、開放的環境。相信每位進入 SITCON 夏令營的學員及夥伴都值得被尊重，而我們亦將盡力提供最安全的環境，讓參與
           SITCON 夏令營的每個人能夠尊重個體間的差異、在社群中相互扶助、並鼓勵所有人揮灑屬於自己的生命色彩。 因此，若有幸能在 SITCON
@@ -181,7 +228,10 @@
           <li>在夏令營裡多交朋友，珍惜彼此相聚的時光！</li>
         </ul>
       </div>
-      <div v-scroll-reveal class="page">
+      <div
+        v-scroll-reveal
+        class="page"
+      >
         <h4>以下的行為是不被容忍的：</h4>
         <ul>
           <li>針對性別、性向、種族、外貌、宗教、年齡、身體狀況或個人身份的挑釁或冒犯。</li>
@@ -192,7 +242,10 @@
           <li>任何違反法律的行為。</li>
         </ul>
       </div>
-      <div v-scroll-reveal class="page">
+      <div
+        v-scroll-reveal
+        class="page"
+      >
         <p>為了確保每位參與者的安全，我們將恪守以上規則。</p>
         <p>
           對於違反行為準則者，我們將採取必要且合理的手段予以介入，包含但不限於將參與者請離現場、自相關名冊除名或列為不受歡迎對象，或在必要時移送警察機關法辦。
@@ -213,16 +266,16 @@
 </template>
 
 <script>
-import TimeTable from "./TimeTable.vue";
-import studentexp from "./studentexp.vue";
+import TimeTable from './TimeTable.vue'
+import studentexp from './studentexp.vue'
 
 export default {
-  name: "HelloWorld",
+  name: 'HelloWorld',
   components: {
     TimeTable,
     studentexp
   }
-};
+}
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->

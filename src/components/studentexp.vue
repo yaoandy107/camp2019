@@ -3,13 +3,25 @@
     <hr>
     <h4>過去學員心得</h4>
     <div class="wrapper">
-      <div class="scroller" ref="scroller">
+      <div
+        ref="scroller"
+        class="scroller"
+      >
         <div class="list">
-          <div class="student" v-for="(student,i) in studentexp" :key="i">
+          <div
+            v-for="(student,i) in studentexp"
+            :key="i"
+            class="student"
+          >
             <div class="wrapper">
               <div class="scroller-y">
                 <div class="content">
-                  <p v-for="(line, j) in student.content" :key="j">{{ line }}</p>
+                  <p
+                    v-for="(line, j) in student.content"
+                    :key="j"
+                  >
+                    {{ line }}
+                  </p>
                 </div>
               </div>
             </div>
@@ -19,60 +31,68 @@
       </div>
     </div>
     <div class="navigation">
-      <span class="button prev" @click.stop="prev">←上一篇</span>
-      <span class="button next" @click.stop="next">下一篇→</span>
+      <span
+        class="button prev"
+        @click.stop="prev"
+      >←上一篇</span>
+      <span
+        class="button next"
+        @click.stop="next"
+      >下一篇→</span>
     </div>
     <hr>
   </div>
 </template>
 <script>
-import studentexp from "../assets/json/studentexp.json";
-import { clearTimeout } from "timers";
+import studentexp from '../assets/json/studentexp.json'
 
 export default {
-  data() {
-    return { studentexp, page: 0, scrollEventId: null };
+  data () {
+    return { studentexp, page: 0, scrollEventId: null }
   },
+  mounted () {
+    this.$refs.scroller.addEventListener('scroll', this.onScroll)
+    window.addEventListener('resize', this.goPageHard)
+  },
+  beforeDestroy () {
+    this.$refs.scroller.removeEventListener('scroll', this.onScroll)
+    window.removeEventListener('resize', this.goPageHard)
+  },
+
   methods: {
-    onScroll(e) {
-      if (this.scrollEventId != null) window.clearTimeout(this.scrollEventId);
-      console.log(e);
+    onScroll (e) {
+      if (this.scrollEventId != null) window.clearTimeout(this.scrollEventId)
       this.page = Math.round(
         (this.$refs.scroller.scrollLeft / this.$refs.scroller.scrollWidth) *
           studentexp.length
-      );
+      )
       this.scrollEventId = window.setTimeout(() => {
-        this.goPage();
-      }, 200);
+        this.goPage()
+      }, 200)
     },
-    prev(e) {
-      this.page--;
-      this.goPage();
-      e.preventDefault();
+    prev (e) {
+      this.page--
+      this.goPage()
+      e.preventDefault()
     },
-    next(e) {
-      this.page++;
-      this.goPage();
-      e.preventDefault();
+    next (e) {
+      this.page++
+      this.goPage()
+      e.preventDefault()
     },
-    goPage() {
-      console.log("hi");
-      while (this.page < 0) this.page += studentexp.length;
-      this.page %= studentexp.length;
-      this.$refs.scroller.scrollTo(
-        (this.page * this.$refs.scroller.scrollWidth) / studentexp.length,
-        0
-      );
+    getPageScrollLeft () {
+      while (this.page < 0) this.page += studentexp.length
+      this.page %= studentexp.length
+      return (this.page * this.$refs.scroller.scrollWidth) / studentexp.length
+    },
+    goPage () {
+      this.$refs.scroller.scrollTo(this.getPageScrollLeft(), 0)
+    },
+    goPageHard () {
+      this.$refs.scroller.scrollTo(this.getPageScrollLeft(), 0)
     }
-  },
-  mounted() {
-    this.$refs.scroller.addEventListener("scroll", this.onScroll);
-    this.$refs.scroller.addEventListener("scrollend", this.onScroll);
-  },
-  destroyed() {
-    this.$refs.scroller.removeEventListener("scroll", this.onScroll);
   }
-};
+}
 </script>
 
 <style scoped lang="scss">
