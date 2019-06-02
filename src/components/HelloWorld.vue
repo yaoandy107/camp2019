@@ -2,14 +2,10 @@
   <div class="hello">
     <div class="container">
       <p>|</p>
-      <div id="about" class="anchor" />
-      <h2 v-scroll-reveal>
-        關於夏令營
-      </h2>
+      <div id="about" class="anchor"/>
+      <h2 v-scroll-reveal>關於夏令營</h2>
       <div v-scroll-reveal class="page">
-        <p>
-          有鑑於資訊領域逐漸成為科技時代的重要學門，社群與開源精神亦持續抬頭，SITCON 團隊認為將資訊教育向下扎根，為在資訊科學領域有興趣的學生提供一個親切而良好的機會入門，並播灑開源種子，是一件相當重要且值得去做的事情。
-        </p>
+        <p>有鑑於資訊領域逐漸成為科技時代的重要學門，社群與開源精神亦持續抬頭，SITCON 團隊認為將資訊教育向下扎根，為在資訊科學領域有興趣的學生提供一個親切而良好的機會入門，並播灑開源種子，是一件相當重要且值得去做的事情。</p>
 
         <p>
           2014 年至今，SITCON 夏令營已將邁入第五屆，在此之前課程內容涵蓋開源碼、資訊安全、Maker、Python、後端的
@@ -23,21 +19,18 @@
         </p>
       </div>
 
-      <h2 v-scroll-reveal>
-        關於 SITCON
-      </h2>
+      <h2 v-scroll-reveal>關於 SITCON</h2>
       <div v-scroll-reveal class="page">
         <p>
           學生計算機年會（SITCON）以學生為本、由學生自發舉辦，長期投身學生資訊教育與推廣開源精神，希望引領更多學子踏入資訊的殿堂，更冀望所有對資訊有興趣的學生，能夠在年會裏齊聚一堂，彼此激盪、傳承、啟發，達到「學以致用、教學相長」的實際展現。SITCON
-          也是一個屬於學生的舞台，讓學子們實踐、體驗開源社群精神：開放、分享、協作，貢獻一己之長一同讓 SITCON 更好。SITCON 也提供發表自身所學所長的舞台，讓更多人看見你的努力、你的改變！</p>
+          也是一個屬於學生的舞台，讓學子們實踐、體驗開源社群精神：開放、分享、協作，貢獻一己之長一同讓 SITCON 更好。SITCON 也提供發表自身所學所長的舞台，讓更多人看見你的努力、你的改變！
+        </p>
         <p>即使你不會寫程式，但總有你可以做的事！不要害羞，現在就加入我們吧！</p>
       </div>
-      <div id="course" class="anchor" />
-      <h2 v-scroll-reveal>
-        課程
-      </h2>
+      <div id="course" class="anchor"/>
+      <h2 v-scroll-reveal>課程</h2>
       <div v-scroll-reveal>
-        <time-table />
+        <time-table/>
       </div>
 
       <div class="row">
@@ -67,56 +60,55 @@
 
           <div v-scroll-reveal class="page course">
             <h3>Hackathon</h3>
-            <p>
-              黑客松（Hackathon）是「黑客」（Hack；原指早期為電腦系統找尋不完美的地方，或是探索不同的解法，來改善電腦系統）跟「馬拉松」（Marathon）的組合字，顧名思義，也就像是程式設計、工程界的馬拉松。由有興趣的一群人在有限的時間內，發揮自己的專長做出一個有特色的專案。
-            </p>
+            <p>黑客松（Hackathon）是「黑客」（Hack；原指早期為電腦系統找尋不完美的地方，或是探索不同的解法，來改善電腦系統）跟「馬拉松」（Marathon）的組合字，顧名思義，也就像是程式設計、工程界的馬拉松。由有興趣的一群人在有限的時間內，發揮自己的專長做出一個有特色的專案。</p>
           </div>
         </div>
       </div>
 
       <div class="container">
         <h4>
-          今年，SITCON 夏令營將為學員<br class="if-mobile">
-          打造一場專屬的小型黑客松，<br>
-          取代傳統的晚會、唱歌跳舞等活動，<br class="if-mobile">
-          以小隊為單位，<br>
-          在吃吃喝喝的同時，<br class="if-mobile">
-          一起發揮創意、運用課程中所學，<br>
-          做出與眾不同的作品呈現！
+          今年，SITCON 夏令營將為學員
+          <br class="if-mobile">打造一場專屬的小型黑客松，
+          <br>取代傳統的晚會、唱歌跳舞等活動，
+          <br class="if-mobile">以小隊為單位，
+          <br>在吃吃喝喝的同時，
+          <br class="if-mobile">一起發揮創意、運用課程中所學，
+          <br>做出與眾不同的作品呈現！
         </h4>
       </div>
-
-      <div id="signup" class="anchor" />
-      <h2 v-scroll-reveal>
-        報名
-      </h2>
+      <studentexp/>
+      <div id="signup" class="anchor"/>
+      <h2 v-scroll-reveal>報名</h2>
       <div v-scroll-reveal class="page">
         <h4>活動費用</h4>
         <div class="row">
           <div class="col-6">
-            <h5>個人報名</h5>
-            6500 元 /人
+            <h5>個人報名</h5>6500 元 /人
           </div>
           <div class="col-6">
-            <h5>團隊報名</h5>
-            5900 元 /人
+            <h5>團隊報名</h5>5900 元 /人
           </div>
         </div>
         <hr>
         <p>
           三人同時報名，視為團體報名，每團以三人為限，請詳閱
-          <a href="https://drive.google.com/file/d/1YfxLL2Kg6AG1Ol3i_ecgu_4SweCiBI0H/view">活動報名簡章。</a>
+          <a
+            href="https://drive.google.com/file/d/1YfxLL2Kg6AG1Ol3i_ecgu_4SweCiBI0H/view"
+          >活動報名簡章。</a>
         </p>
         <p>本次夏令營預計招收學員 60 名，我們會針對報名資料做簡易審查，非先報先贏。</p>
         <p>正取學員名單將於 2019 / 06 / 18 公佈，正取學員需完成報名費繳交，始完成報名程序。</p>
         <p>
           另設有補助名額，請詳閱
-          <a href="https://drive.google.com/file/d/1nHNMDzgDH8s7isxoH0_8mF8gIVP2lo5p/view">
-            補助辦法</a>。
+          <a
+            href="https://drive.google.com/file/d/1nHNMDzgDH8s7isxoH0_8mF8gIVP2lo5p/view"
+          >補助辦法</a>。
         </p>
         <p>
           關於退費事宜，請見
-          <a href="https://docs.google.com/document/d/1-2yYZS-Hv0ntQ1zA5MCu8bIzXgXWOGVzTvCCXystmVA">退費說明文件</a>。
+          <a
+            href="https://docs.google.com/document/d/1-2yYZS-Hv0ntQ1zA5MCu8bIzXgXWOGVzTvCCXystmVA"
+          >退費說明文件</a>。
         </p>
         <hr>
         <h4>報名時間</h4>
@@ -126,22 +118,24 @@
         </a>
         <h4>報名資格</h4>
         <h5>
-          具有學生身分<br>
-          （持有任一學生證蓋有 107 學年度上學期註冊章）<br>
-          或出生日期為 2000 年 9 月 1 日（含）以後。
+          具有學生身分
+          <br>（持有任一學生證蓋有 107 學年度上學期註冊章）
+          <br>或出生日期為 2000 年 9 月 1 日（含）以後。
         </h5>
 
         <div class="row">
           <div class="col-6-md">
             <h4>活動時間</h4>
             <h5>
-              8/7（三） ~ 8/11（日） <br>（五天四夜，含住宿）
+              8/7（三） ~ 8/11（日）
+              <br>（五天四夜，含住宿）
             </h5>
           </div>
           <div class="col-6-md">
             <h4>活動地點</h4>
             <h5>
-              國立臺灣海洋大學 <br>
+              國立臺灣海洋大學
+              <br>
               <a href="https://goo.gl/maps/UZ9cUuJiVxAtDiAk6">（202基隆市中正區北寧路2號）</a>
             </h5>
           </div>
@@ -151,7 +145,9 @@
         <ul>
           <li>
             本次活動採用 KKTIX 售票進行報名，請詳細閱讀
-            <a href="https://drive.google.com/file/d/1YfxLL2Kg6AG1Ol3i_ecgu_4SweCiBI0H/view">活動報名簡章</a>。
+            <a
+              href="https://drive.google.com/file/d/1YfxLL2Kg6AG1Ol3i_ecgu_4SweCiBI0H/view"
+            >活動報名簡章</a>。
           </li>
           <li>正式取得學員資格後不得轉讓予他人使用，轉讓者將取消資格。</li>
           <li>繳費完成始完成報名程序，正取學員若未於期限內繳交報名費用，將取消資格，由備取者遞補。</li>
@@ -165,7 +161,7 @@
         </ul>
       </div>
 
-      <div id="code-of-conduct" class="anchor" />
+      <div id="code-of-conduct" class="anchor"/>
 
       <h2 v-scroll-reveal>
         行為準則
@@ -217,50 +213,52 @@
 </template>
 
 <script>
-  import TimeTable from './TimeTable.vue'
+import TimeTable from "./TimeTable.vue";
+import studentexp from "./studentexp.vue";
 
-  export default {
-    name: 'HelloWorld',
-    components: {
-      TimeTable
-    }
+export default {
+  name: "HelloWorld",
+  components: {
+    TimeTable,
+    studentexp
   }
+};
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-  @import "../style/main.scss";
+@import "../style/main.scss";
 
-  img {
-    width: 100%;
+img {
+  width: 100%;
+}
+
+.page {
+  border: solid 1px white;
+  border-radius: 32px;
+  padding: 20px 16px;
+  margin: 16px 0px 0px;
+  background: rgba(255, 255, 255, 0.9);
+  color: black;
+
+  box-sizing: border-box;
+
+  p {
+    text-align: left;
   }
 
-  .page {
-    border: solid 1px white;
-    border-radius: 32px;
-    padding: 20px 16px;
-    margin: 16px 0px 0px;
-    background: rgba(255, 255, 255, .9);
-    color: black;
+  h3 {
+    margin-top: 20px;
+  }
 
-    box-sizing: border-box;
+  @include rwd-below(768px) {
+    padding: 8px 4px;
+  }
 
-    p {
-      text-align: left;
-    }
-
-    h3 {
-      margin-top: 20px;
-    }
-
-    @include rwd-below(768px) {
-      padding: 8px 4px;
-    }
-
-    @include rwd-above(768px) {
-      &.course {
-        min-height: 320px;
-      }
+  @include rwd-above(768px) {
+    &.course {
+      min-height: 320px;
     }
   }
+}
 </style>
