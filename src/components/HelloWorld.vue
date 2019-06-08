@@ -118,9 +118,9 @@
         </p>
         <hr>
         <h4>報名時間</h4>
-        <h5>即日起至 2019 / 06 / 07 止</h5>
+        <h5> 2019 / 06 / 07 止 </h5>
         <a href="https://sitcon.kktix.cc/events/sitcon-camp2019" target="blank">
-          <button>立即報名</button>
+          <button disabled>立即報名（已截止）</button>
         </a>
         <h4>報名資格</h4>
         <h5>
