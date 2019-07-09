@@ -1,13 +1,20 @@
 <template>
-  <div id="nav" :class="{
+  <div
+    id="nav"
+    :class="{
       scrolled: scrolled
-    }">
+    }"
+  >
     <div class="bg" />
     <div class="container">
       <div class="list">
         <div class="block block-home">
           <router-link to="/#home">
-            <img height="24" src="../assets/logoicon.svg" alt="">
+            <img
+              height="24"
+              src="../assets/logoicon.svg"
+              alt=""
+            >
           </router-link>
           <div class="underline" />
         </div>
@@ -28,13 +35,13 @@
           <div class="underline" />
         </div>
         <div class="block block-exp">
-            <router-link to="/#exp">
-              <span>
-                心得
-              </span>
-            </router-link>
-            <div class="underline" />
-          </div>
+          <router-link to="/#exp">
+            <span>
+              心得
+            </span>
+          </router-link>
+          <div class="underline" />
+        </div>
         <div class="block block-signup">
           <router-link to="/#signup">
             <span>
@@ -57,62 +64,62 @@
 </template>
 
 <script>
-  export default {
-    name: 'NavBar',
-    data() {
-      return {
-        scrolled: false,
-        targets: [],
-        current: ''
-      }
-    },
-    created() {
-      window.addEventListener('scroll', this.onScroll)
-      window.addEventListener('mousewheel', this.onScroll)
-      window.addEventListener('touchmove', this.onScroll)
-    },
-    mounted() {
-      this.targets = document.querySelectorAll('.anchor')
-      this.onScroll()
-      console.log(this.targets)
-    },
-    destroyed() {
-      window.removeEventListener('scroll', this.onScroll)
-      window.removeEventListener('mousewheel', this.onScroll)
-      window.removeEventListener('touchmove', this.onScroll)
-    },
-    methods: {
-      onScroll(e) {
-        this.scrolled = window.pageYOffset > 20
+export default {
+  name: 'NavBar',
+  data () {
+    return {
+      scrolled: false,
+      targets: [],
+      current: ''
+    }
+  },
+  created () {
+    window.addEventListener('scroll', this.onScroll)
+    window.addEventListener('mousewheel', this.onScroll)
+    window.addEventListener('touchmove', this.onScroll)
+  },
+  mounted () {
+    this.targets = document.querySelectorAll('.anchor')
+    this.onScroll()
+    console.log(this.targets)
+  },
+  destroyed () {
+    window.removeEventListener('scroll', this.onScroll)
+    window.removeEventListener('mousewheel', this.onScroll)
+    window.removeEventListener('touchmove', this.onScroll)
+  },
+  methods: {
+    onScroll (e) {
+      this.scrolled = window.pageYOffset > 20
 
-        var target = null
-        this.targets.forEach(e => {
-          var y = e.getBoundingClientRect().y
-          y -= innerHeight / 2
-          if (y > 0) return
-          if (target == null || y > target.y) {
-            target = {
-              e,
-              y
-            }
+      var target = null
+      this.targets.forEach(e => {
+        var y = e.getBoundingClientRect().y
+        y -= innerHeight / 2
+        if (y > 0) return
+        if (target == null || y > target.y) {
+          target = {
+            e,
+            y
           }
-        })
-
-        if (target) {
-          // console.log(target.e);
-          // window.location.hash = "#" + target.e.id;
-          document
-            .querySelectorAll('.underline-show')
-            .forEach(x => x.classList.remove('underline-show'))
-          document
-            .querySelector('.block-' + target.e.id + ' .underline')
-            .classList.add('underline-show')
-          if (e == null || (e.type !== 'mousewheel' && e.type !== 'touchmove')) {
-          } else this.$router.push('')
         }
+      })
+
+      if (target) {
+        // console.log(target.e);
+        // window.location.hash = "#" + target.e.id;
+        document
+          .querySelectorAll('.underline-show')
+          .forEach(x => x.classList.remove('underline-show'))
+        document
+          .querySelector('.block-' + target.e.id + ' .underline')
+          .classList.add('underline-show')
+        if (e == null || (e.type !== 'mousewheel' && e.type !== 'touchmove')) {
+        } else this.$router.push('')
       }
     }
   }
+}
 </script>
 
 <style scoped lang="scss">
