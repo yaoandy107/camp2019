@@ -19,7 +19,7 @@
         </ul>
       </template>
       <template v-slot:image>
-        <img src alt />
+        <img src="../../assets/teachers/火箭隊.jpg" alt />
       </template>
     </DetailFormat>
   </div>

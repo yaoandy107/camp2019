@@ -44,7 +44,7 @@ export default {
 .close {
   width: 40px;
   height: 40px;
-  position: absolute;
+  position: fixed;
   right: 50px;
   top: 50px;
   cursor: pointer;

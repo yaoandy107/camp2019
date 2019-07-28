@@ -26,7 +26,7 @@
         </ul>
       </template>
       <template v-slot:image>
-        <img src alt />
+        <img src="../../assets/teachers/黑楓.jpg" alt />
       </template>
     </DetailFormat>
   </div>

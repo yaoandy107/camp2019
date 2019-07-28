@@ -38,7 +38,7 @@
         </ul>
       </template>
       <template v-slot:image>
-        <img src alt />
+        <img src="../../assets/teachers/君翰.jpg" alt />
       </template>
     </DetailFormat>
   </div>

@@ -22,7 +22,7 @@
         </p>
       </template>
       <template v-slot:image>
-        <img src alt />
+        <img src="../../assets/teachers/Denny.jpg" alt />
       </template>
     </DetailFormat>
   </div>
