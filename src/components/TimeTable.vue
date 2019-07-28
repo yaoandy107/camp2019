@@ -5,13 +5,25 @@
         <table class="table-big">
           <thead>
             <tr>
-              <th class="time">7:00</th>
-              <th v-for="head in heads" :key="head">{{ head }}</th>
+              <th class="time">
+                7:00
+              </th>
+              <th
+                v-for="head in heads"
+                :key="head"
+              >
+                {{ head }}
+              </th>
             </tr>
           </thead>
           <tbody>
-            <tr v-for="index in indexes" :key="index">
-              <td class="time">{{ /*times[index] + ' ~ ' +*/ times[index + 1] }}</td>
+            <tr
+              v-for="index in indexes"
+              :key="index"
+            >
+              <td class="time">
+                {{ /*times[index] + ' ~ ' +*/ times[index + 1] }}
+              </td>
               <template v-for="day in days">
                 <td
                   v-if="getEvent(times[index], day) !== undefined"
@@ -19,7 +31,7 @@
                   :class="{
                     event:true,
                     clickable: getEvent(times[index], day).detail!=null
-                    }"
+                  }"
                   :rowspan="calcRowspan(index, getEvent(times[index], day))"
                   @click="$emit('selected', getEvent(times[index], day).detail)"
                 >
@@ -29,13 +41,19 @@
               </template>
             </tr>
             <tr>
-              <td class="hidden">.</td>
+              <td class="hidden">
+                .
+              </td>
             </tr>
           </tbody>
         </table>
       </div>
 
-      <div v-for="(day, id) in events_byday" :key="id" class="small-version">
+      <div
+        v-for="(day, id) in events_byday"
+        :key="id"
+        class="small-version"
+      >
         <h4>Day {{ id }}</h4>
         <table class="table-small">
           <template v-for="(event, eid) in day">
@@ -43,8 +61,8 @@
               v-if="event.subTitle!=''"
               :key="eid"
               :class="{
-              clickable: event.detail!=null
-            }"
+                clickable: event.detail!=null
+              }"
               @click="$emit('selected', event.detail)"
             >
               <td>{{ event.time.start }}~ {{ event.time.end }}</td>
@@ -58,82 +76,82 @@
 </template>
 
 <script>
-import events from "../assets/json/events.json";
-import groupBy from "lodash.groupby";
-import range from "lodash.range";
+import events from '../assets/json/events.json'
+import groupBy from 'lodash.groupby'
+import range from 'lodash.range'
 // import uniq from 'lodash.uniq'
 
-function timeToNumber(time) {
-  let separated = time.split(":");
-  return separated[0] * 60 + +separated[1];
+function timeToNumber (time) {
+  let separated = time.split(':')
+  return separated[0] * 60 + +separated[1]
 }
 
 events.sort((a, b) => {
-  return timeToNumber(a.time.start) - timeToNumber(b.time.start);
-});
+  return timeToNumber(a.time.start) - timeToNumber(b.time.start)
+})
 
 export default {
-  name: "TimeTable",
+  name: 'TimeTable',
   components: {},
-  events: ["selected"],
-  data() {
+  events: ['selected'],
+  data () {
     return {
-      start: "07:30",
-      end: "22:00",
-      heads: ["Day 1", "Day 2", "Day 3", "Day 4", "Day 5"],
-      days: ["1", "2", "3", "4", "5"],
+      start: '07:30',
+      end: '22:00',
+      heads: ['Day 1', 'Day 2', 'Day 3', 'Day 4', 'Day 5'],
+      days: ['1', '2', '3', '4', '5'],
       events: events,
-      events_byday: groupBy(events, "time.day")
-    };
+      events_byday: groupBy(events, 'time.day')
+    }
   },
   computed: {
-    groups: function() {
-      return groupBy(this.events, "time.start");
+    groups: function () {
+      return groupBy(this.events, 'time.start')
     },
-    times: function() {
-      const result = [];
+    times: function () {
+      const result = []
       for (let i = 0; result[result.length - 1] !== this.end; i++) {
         let time =
           this.getTime(this.start).hour * 60 +
           this.getTime(this.start).min +
-          i * 30;
+          i * 30
         let temp = {
           hour: Math.floor(time / 60),
           min: time % 60
-        };
-        result.push(`${temp.hour}:${temp.min.toString().padStart("2", "0")}`);
+        }
+        result.push(`${temp.hour}:${temp.min.toString().padStart('2', '0')}`)
       }
-      return result;
+      return result
     },
-    indexes: function() {
-      return range(0, this.times.length - 1);
+    indexes: function () {
+      return range(0, this.times.length - 1)
     }
   },
   methods: {
-    getTime(value) {
-      const sp = value.split(":");
+    getTime (value) {
+      const sp = value.split(':')
       return {
         hour: Number(sp[0]),
         min: Number(sp[1])
-      };
+      }
     },
-    getEvent(time, day) {
+    getEvent (time, day) {
       // console.log(time, day);
       if (this.groups[time]) {
-        return this.groups[time].find(element => element.time.day === day);
-      } else return undefined;
+        return this.groups[time].find(element => element.time.day === day)
+      } else return undefined
     },
-    calcRowspan(index, event) {
+    calcRowspan (index, event) {
       let start =
         this.getTime(event.time.start).hour * 60 +
-        this.getTime(event.time.start).min;
+        this.getTime(event.time.start).min
       let end =
         this.getTime(event.time.end).hour * 60 +
-        this.getTime(event.time.end).min;
-      return Math.floor((end - start) / 30);
+        this.getTime(event.time.end).min
+      return Math.floor((end - start) / 30)
     }
   }
-};
+}
 </script>
 
 <style lang="sass" scoped>

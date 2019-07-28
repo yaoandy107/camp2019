@@ -1,28 +1,28 @@
 <template>
   <div class="detail">
     <h3>
-      <slot name="title"></slot>
+      <slot name="title" />
     </h3>
-    <slot name="subtitle"></slot>
+    <slot name="subtitle" />
     <h4 style="text-align:right">
       講師：
-      <slot name="teacher"></slot>
+      <slot name="teacher" />
     </h4>
-    <slot name="image"></slot>
+    <slot name="image" />
     <div style="padding-top:20px">
-      <slot name="desc"></slot>
+      <slot name="desc" />
     </div>
     <div style="clear:left;">
-      <slot name="content"></slot>
+      <slot name="content" />
     </div>
   </div>
 </template>
 <script>
 export default {
-  data() {
-    return {};
+  data () {
+    return {}
   }
-};
+}
 </script>
 <style lang="scss" >
 .detail {

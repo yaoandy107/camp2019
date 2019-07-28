@@ -1,9 +1,15 @@
 <template>
   <div>
     <DetailFormat>
-      <template v-slot:title>Python function 系列、Review</template>
-      <template v-slot:subtitle>Day 2 14:30 - 17:30 (3hr)</template>
-      <template v-slot:teacher>林君翰</template>
+      <template v-slot:title>
+        Python function 系列、Review
+      </template>
+      <template v-slot:subtitle>
+        Day 2 14:30 - 17:30 (3hr)
+      </template>
+      <template v-slot:teacher>
+        林君翰
+      </template>
       <template v-slot:desc>
         <p>
           海大資工大三，曾在ICPC亞洲區花蓮站以及各種大大小小的程式競賽獲得佳作（對沒錯，都是佳作QQ）。
@@ -38,19 +44,22 @@
         </ul>
       </template>
       <template v-slot:image>
-        <img src="../../assets/teachers/君翰.jpg" alt />
+        <img
+          src="../../assets/teachers/君翰.jpg"
+          alt
+        >
       </template>
     </DetailFormat>
   </div>
 </template>
 <script>
-import DetailFormat from "./DetailFormat";
+import DetailFormat from './DetailFormat'
 export default {
-  data() {
-    return {};
-  },
   components: {
     DetailFormat
+  },
+  data () {
+    return {}
   }
-};
+}
 </script>

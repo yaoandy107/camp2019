@@ -1,9 +1,15 @@
 <template>
   <div>
     <DetailFormat>
-      <template v-slot:title>telegram bot</template>
-      <template v-slot:subtitle>Day 3 14:30 - 17:30 (3hr)</template>
-      <template v-slot:teacher>黑楓</template>
+      <template v-slot:title>
+        telegram bot
+      </template>
+      <template v-slot:subtitle>
+        Day 3 14:30 - 17:30 (3hr)
+      </template>
+      <template v-slot:teacher>
+        黑楓
+      </template>
       <template v-slot:desc>
         <p>北科大資工系四年級，曾任北科程式設計研究社 1st 社長。平常喜歡不務正業的寫和學校無關的程式，偶爾寫一些小服務、開發一些 App、打打 CTF 的小廢廢。</p>
       </template>
@@ -26,19 +32,22 @@
         </ul>
       </template>
       <template v-slot:image>
-        <img src="../../assets/teachers/黑楓.jpg" alt />
+        <img
+          src="../../assets/teachers/黑楓.jpg"
+          alt
+        >
       </template>
     </DetailFormat>
   </div>
 </template>
 <script>
-import DetailFormat from "./DetailFormat";
+import DetailFormat from './DetailFormat'
 export default {
-  data() {
-    return {};
-  },
   components: {
     DetailFormat
+  },
+  data () {
+    return {}
   }
-};
+}
 </script>

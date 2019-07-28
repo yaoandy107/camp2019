@@ -1,9 +1,15 @@
 <template>
   <div>
     <DetailFormat>
-      <template v-slot:title>package management、pip &amp; requests、handle json data</template>
-      <template v-slot:subtitle>Day 3 09:00 - 12:00 (3hr)</template>
-      <template v-slot:teacher>soyccan / 正康</template>
+      <template v-slot:title>
+        package management、pip &amp; requests、handle json data
+      </template>
+      <template v-slot:subtitle>
+        Day 3 09:00 - 12:00 (3hr)
+      </template>
+      <template v-slot:teacher>
+        soyccan / 正康
+      </template>
       <template v-slot:desc>
         <p>交通大學電資班大一，曾經在南一中資訊社當教學，現在是天文社的儀器長，是SITCON新鮮人。國中自學Python，高中在資訊社學C++，參加過一些程式競賽被隊友carry。喜歡學新東西，最近在學組合語言還有火舞，還有在一個小社團裡寫網站後端。偶爾打打CTF，對系統底層比較有興趣。常吃開源社雞排，夢想是找到新竹美食。</p>
       </template>
@@ -24,19 +30,22 @@
         </ul>
       </template>
       <template v-slot:image>
-        <img src alt />
+        <img
+          src
+          alt
+        >
       </template>
     </DetailFormat>
   </div>
 </template>
 <script>
-import DetailFormat from "./DetailFormat";
+import DetailFormat from './DetailFormat'
 export default {
-  data() {
-    return {};
-  },
   components: {
     DetailFormat
+  },
+  data () {
+    return {}
   }
-};
+}
 </script>

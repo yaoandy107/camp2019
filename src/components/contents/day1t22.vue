@@ -1,9 +1,15 @@
 <template>
   <div>
     <DetailFormat>
-      <template v-slot:title>Python 基礎資料結構(list / dict / tuple)</template>
-      <template v-slot:subtitle>Day 1 18:30 - 21:30 (3hr)</template>
-      <template v-slot:teacher>火箭隊</template>
+      <template v-slot:title>
+        Python 基礎資料結構(list / dict / tuple)
+      </template>
+      <template v-slot:subtitle>
+        Day 1 18:30 - 21:30 (3hr)
+      </template>
+      <template v-slot:teacher>
+        火箭隊
+      </template>
       <template v-slot:desc>
         <p>既然你誠心誠意地請教了，那我就先不要告訴你：）</p>
       </template>
@@ -19,19 +25,22 @@
         </ul>
       </template>
       <template v-slot:image>
-        <img src="../../assets/teachers/火箭隊.jpg" alt />
+        <img
+          src="../../assets/teachers/火箭隊.jpg"
+          alt
+        >
       </template>
     </DetailFormat>
   </div>
 </template>
 <script>
-import DetailFormat from "./DetailFormat";
+import DetailFormat from './DetailFormat'
 export default {
-  data() {
-    return {};
-  },
   components: {
     DetailFormat
+  },
+  data () {
+    return {}
   }
-};
+}
 </script>

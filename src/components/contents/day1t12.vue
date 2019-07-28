@@ -1,9 +1,15 @@
 <template>
   <div>
     <DetailFormat>
-      <template v-slot:title>Python env、VSCode、Python 介紹、基礎語法</template>
-      <template v-slot:subtitle>Day 1 13:30 - 16:30 (3hr)</template>
-      <template v-slot:teacher>柏凱</template>
+      <template v-slot:title>
+        Python env、VSCode、Python 介紹、基礎語法
+      </template>
+      <template v-slot:subtitle>
+        Day 1 13:30 - 16:30 (3hr)
+      </template>
+      <template v-slot:teacher>
+        柏凱
+      </template>
       <template v-slot:desc>
         <p>海洋大學資工系大三，曾參與 ICPC 亞洲區花蓮站並獲得佳作，也曾參與 ITSA 桂冠賽闖關組也獲得佳作 (其他比賽也都是佳作 QQ)。正在往仙人邁進的大學生，因為室友沒有甚麼記憶能力，所以很擅長幫室友找東西。</p>
       </template>
@@ -25,19 +31,22 @@
         </ul>
       </template>
       <template v-slot:image>
-        <img src="../../assets/teachers/柏凱.jpg" alt />
+        <img
+          src="../../assets/teachers/柏凱.jpg"
+          alt
+        >
       </template>
     </DetailFormat>
   </div>
 </template>
 <script>
-import DetailFormat from "./DetailFormat";
+import DetailFormat from './DetailFormat'
 export default {
-  data() {
-    return {};
-  },
   components: {
     DetailFormat
+  },
+  data () {
+    return {}
   }
-};
+}
 </script>

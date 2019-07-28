@@ -1,23 +1,28 @@
 <template>
-  <div :class="{
-        main: true,
-        display
-      }">
+  <div
+    :class="{
+      main: true,
+      display
+    }"
+  >
     <div class="content">
       <div class="container">
         <slot />
       </div>
     </div>
-    <div class="close" @click="display=false"></div>
+    <div
+      class="close"
+      @click="display=false"
+    />
   </div>
 </template>
 <script>
 export default {
-  data() {
-    return { display: false };
+  data () {
+    return { display: false }
   },
-  created() {}
-};
+  created () {}
+}
 </script>
 
 <style lang="scss" scoped>

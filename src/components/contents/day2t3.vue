@@ -1,9 +1,15 @@
 <template>
   <div>
     <DetailFormat>
-      <template v-slot:title>網路 / HTTP / RESTful 觀念及實做</template>
-      <template v-slot:subtitle>Day 2 09:00 - 12:00 (3hr)</template>
-      <template v-slot:teacher>Denny Huang</template>
+      <template v-slot:title>
+        網路 / HTTP / RESTful 觀念及實做
+      </template>
+      <template v-slot:subtitle>
+        Day 2 09:00 - 12:00 (3hr)
+      </template>
+      <template v-slot:teacher>
+        Denny Huang
+      </template>
       <template v-slot:desc>
         <p>
           SITCON 學生計算機年會共同發起人，2013 及 2014 年會總召，目前於雷亞遊戲（Rayark Inc.）擔任 Data Team Lead；
@@ -22,19 +28,22 @@
         </p>
       </template>
       <template v-slot:image>
-        <img src="../../assets/teachers/Denny.jpg" alt />
+        <img
+          src="../../assets/teachers/Denny.jpg"
+          alt
+        >
       </template>
     </DetailFormat>
   </div>
 </template>
 <script>
-import DetailFormat from "./DetailFormat";
+import DetailFormat from './DetailFormat'
 export default {
-  data() {
-    return {};
-  },
   components: {
     DetailFormat
+  },
+  data () {
+    return {}
   }
-};
+}
 </script>
